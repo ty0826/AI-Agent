@@ -1,0 +1,25 @@
+2026-04-19 19:58:11,729 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/陶宇-前端开发工程师.pdf已经存在知识库
+2026-04-19 19:58:11,729 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/选购指南.txt已经存在知识库
+2026-04-19 19:58:11,729 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/stu_json_lines.json已经存在知识库
+2026-04-19 19:58:11,729 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/扫地机器人100问2.txt已经存在知识库
+2026-04-19 19:58:11,729 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/故障排除.txt已经存在知识库
+2026-04-19 19:58:11,729 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/扫拖一体机器人100问.txt已经存在知识库
+2026-04-19 19:58:11,729 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/维护保养.txt已经存在知识库
+2026-04-19 19:58:11,730 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/扫地机器人100问.pdf已经存在知识库
+2026-04-19 19:58:11,739 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有1条信息
+2026-04-19 19:58:11,739 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'NoneType'> 查询我所在地区的温度下怎么保养扫地机器人
+2026-04-19 19:58:15,156 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：get_user_location
+2026-04-19 19:58:15,157 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{})
+2026-04-19 19:58:15,157 - agent - INFO -middleware.py-24- [tool monitor]工具调用：get_user_location),执行成功
+2026-04-19 19:58:15,160 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有3条信息
+2026-04-19 19:58:15,160 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 杭州
+2026-04-19 19:58:17,570 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：get_weather
+2026-04-19 19:58:17,570 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{'city': '杭州'})
+2026-04-19 19:58:17,570 - agent - INFO -middleware.py-24- [tool monitor]工具调用：get_weather),执行成功
+2026-04-19 19:58:17,573 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有5条信息
+2026-04-19 19:58:17,573 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 杭州当前天气温度20度，晴天，适合出门
+2026-04-19 19:58:21,283 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：rag_summarize
+2026-04-19 19:58:21,283 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{'query': '扫地机器人在20度左右室温下的保养方法'})
+2026-04-19 19:58:21,284 - agent - INFO -middleware.py-24- [tool monitor]工具调用：rag_summarize),执行成功
+2026-04-19 19:58:24,615 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有7条信息
+2026-04-19 19:58:24,615 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 在20度左右室温下，扫地机器人保养应每日使用后用干软布擦拭机身外壳，及时清理防撞条缝隙中的毛发和线头；避免长时间连续工作以防电机和电池过热；定期更新固件和APP以减少软件故障。

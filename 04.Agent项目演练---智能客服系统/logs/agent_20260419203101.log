@@ -1,0 +1,74 @@
+2026-04-19 20:31:01,798 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/陶宇-前端开发工程师.pdf已经存在知识库
+2026-04-19 20:31:01,799 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/选购指南.txt已经存在知识库
+2026-04-19 20:31:01,799 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/stu_json_lines.json已经存在知识库
+2026-04-19 20:31:01,799 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/扫地机器人100问2.txt已经存在知识库
+2026-04-19 20:31:01,799 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/故障排除.txt已经存在知识库
+2026-04-19 20:31:01,800 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/扫拖一体机器人100问.txt已经存在知识库
+2026-04-19 20:31:01,800 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/维护保养.txt已经存在知识库
+2026-04-19 20:31:01,801 - agent - INFO -vector_store.py-83- [加载知识库]/Users/taoyu/Desktop/AI Agent/04.Agent项目演练---智能客服系统/data/扫地机器人100问.pdf已经存在知识库
+2026-04-19 20:31:51,660 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有1条信息
+2026-04-19 20:31:51,661 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'NoneType'> 查询我当月的使用记录
+2026-04-19 20:31:56,541 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：get_user_id
+2026-04-19 20:31:56,541 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{})
+2026-04-19 20:31:56,542 - agent - INFO -middleware.py-24- [tool monitor]工具调用：get_user_id),执行成功
+2026-04-19 20:31:56,606 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有3条信息
+2026-04-19 20:31:56,607 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 1007
+2026-04-19 20:31:58,638 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：get_current_month
+2026-04-19 20:31:58,638 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{})
+2026-04-19 20:31:58,638 - agent - INFO -middleware.py-24- [tool monitor]工具调用：get_current_month),执行成功
+2026-04-19 20:31:58,738 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有5条信息
+2026-04-19 20:31:58,738 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 2025-04
+2026-04-19 20:31:59,975 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：fill_context_for_report
+2026-04-19 20:31:59,975 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{})
+2026-04-19 20:31:59,975 - agent - INFO -middleware.py-24- [tool monitor]工具调用：fill_context_for_report),执行成功
+2026-04-19 20:32:00,334 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有7条信息
+2026-04-19 20:32:00,335 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> fill_context_for_report工具已调用
+2026-04-19 20:32:02,872 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：fetch_external_data
+2026-04-19 20:32:02,873 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{'user_id': '1007', 'month': '2025-04'})
+2026-04-19 20:32:02,874 - agent - INFO -middleware.py-24- [tool monitor]工具调用：fetch_external_data),执行成功
+2026-04-19 20:32:04,410 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有9条信息
+2026-04-19 20:32:04,410 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> {"特征": "55㎡一居 | 独居 | 复合地板", "清洁效率": "覆盖率:93%\\n日均清扫:38㎡\\n沿边清扫无死角", "耗材": "滤网寿命:剩余65天\\n尘盒清理:每5天", "对比": "清洁效率优于80%小户型用户"}
+2026-04-19 20:33:08,746 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有1条信息
+2026-04-19 20:33:08,747 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'NoneType'> 在我当前的区域要怎么保养扫地机器人，要适合气温
+2026-04-19 20:33:12,974 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：get_user_location
+2026-04-19 20:33:12,974 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{})
+2026-04-19 20:33:12,974 - agent - INFO -middleware.py-24- [tool monitor]工具调用：get_user_location),执行成功
+2026-04-19 20:33:13,013 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有3条信息
+2026-04-19 20:33:13,013 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 合肥
+2026-04-19 20:33:16,769 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：get_weather
+2026-04-19 20:33:16,770 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{'city': '合肥'})
+2026-04-19 20:33:16,770 - agent - INFO -middleware.py-24- [tool monitor]工具调用：get_weather),执行成功
+2026-04-19 20:33:17,016 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有5条信息
+2026-04-19 20:33:17,017 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 合肥当前天气温度20度，晴天，适合出门
+2026-04-19 20:33:21,935 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：rag_summarize
+2026-04-19 20:33:21,936 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{'query': '20度晴天气候下扫地机器人保养方法'})
+2026-04-19 20:33:21,936 - agent - INFO -middleware.py-24- [tool monitor]工具调用：rag_summarize),执行成功
+2026-04-19 20:33:29,638 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有7条信息
+2026-04-19 20:33:29,639 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 在20度晴天气候下，扫地机器人保养应每日使用后用干软布擦拭机身外壳，清理防撞条缝隙的毛发和线头；每日检查边刷旋转是否卡顿，及时清理以防电机烧毁；若环境为瓷砖或大理石，拖地后需清理底部水渍，并每月对拖布支架除垢；日常使用后将清扫模式调至“待机”以减少电量消耗；每周检查充电座电源适配器是否发热或异响。
+2026-04-19 20:34:23,156 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有1条信息
+2026-04-19 20:34:23,158 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'NoneType'> 我现在的用的啥扫地机器人
+2026-04-19 20:34:24,624 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：get_user_id
+2026-04-19 20:34:24,624 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{})
+2026-04-19 20:34:24,624 - agent - INFO -middleware.py-24- [tool monitor]工具调用：get_user_id),执行成功
+2026-04-19 20:34:24,689 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有3条信息
+2026-04-19 20:34:24,690 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 1001
+2026-04-19 20:34:26,063 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：get_current_month
+2026-04-19 20:34:26,063 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{})
+2026-04-19 20:34:26,063 - agent - INFO -middleware.py-24- [tool monitor]工具调用：get_current_month),执行成功
+2026-04-19 20:34:26,161 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有5条信息
+2026-04-19 20:34:26,161 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 2025-02
+2026-04-19 20:34:27,494 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：fill_context_for_report
+2026-04-19 20:34:27,494 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{})
+2026-04-19 20:34:27,495 - agent - INFO -middleware.py-24- [tool monitor]工具调用：fill_context_for_report),执行成功
+2026-04-19 20:34:27,865 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有7条信息
+2026-04-19 20:34:27,866 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> fill_context_for_report工具已调用
+2026-04-19 20:34:31,091 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：fetch_external_data
+2026-04-19 20:34:31,092 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{'user_id': '1001', 'month': '2025-02'})
+2026-04-19 20:34:31,092 - agent - INFO -middleware.py-24- [tool monitor]工具调用：fetch_external_data),执行成功
+2026-04-19 20:34:32,808 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有9条信息
+2026-04-19 20:34:32,808 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> {"特征": "65㎡公寓 | 单身 | 木地板", "清洁效率": "覆盖率:86%\\n日均清扫:46㎡\\n漏扫区域:沙发底部（高度不足）", "耗材": "主刷寿命:剩余55天\\nHEPA滤网:剩余35%", "对比": "优于68%同面积用户（清洁频率更高）"}
+2026-04-19 20:34:34,771 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：rag_summarize
+2026-04-19 20:34:34,771 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{'query': '扫地机器人主刷和HEPA滤网保养建议'})
+2026-04-19 20:34:34,771 - agent - INFO -middleware.py-24- [tool monitor]工具调用：rag_summarize),执行成功
+2026-04-19 20:34:40,713 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有11条信息
+2026-04-19 20:34:40,713 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 主刷保养建议：普通家庭每3-6个月更换，宠物家庭或长毛地毯环境每1-3个月更换，出现磨损、变形或开裂应立即更换。HEPA滤网保养建议：每周用软毛刷轻刷表面灰尘，每1-2个月可清水冲洗（不可揉搓）并阴凉晾干，但水洗会降低过滤效果，建议每3-6个月更换新滤网。

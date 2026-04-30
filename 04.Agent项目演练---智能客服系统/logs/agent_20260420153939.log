@@ -1,0 +1,35 @@
+2026-04-20 15:39:39,221 - agent - INFO -vector_store.py-83- [加载知识库]D:\work\cs\AI\AI Agent\AI Agent\04.Agent项目演练---智能客服系统\data\stu_json_lines.json已经存在知识库
+2026-04-20 15:39:39,222 - agent - INFO -vector_store.py-83- [加载知识库]D:\work\cs\AI\AI Agent\AI Agent\04.Agent项目演练---智能客服系统\data\扫地机器人100问.pdf已经存在知识库
+2026-04-20 15:39:39,222 - agent - INFO -vector_store.py-83- [加载知识库]D:\work\cs\AI\AI Agent\AI Agent\04.Agent项目演练---智能客服系统\data\扫地机器人100问2.txt已经存在知识库
+2026-04-20 15:39:39,222 - agent - INFO -vector_store.py-83- [加载知识库]D:\work\cs\AI\AI Agent\AI Agent\04.Agent项目演练---智能客服系统\data\扫拖一体机器人100问.txt已经存在知识库
+2026-04-20 15:39:39,223 - agent - INFO -vector_store.py-83- [加载知识库]D:\work\cs\AI\AI Agent\AI Agent\04.Agent项目演练---智能客服系统\data\故障排除.txt已经存在知识库
+2026-04-20 15:39:39,223 - agent - INFO -vector_store.py-83- [加载知识库]D:\work\cs\AI\AI Agent\AI Agent\04.Agent项目演练---智能客服系统\data\维护保养.txt已经存在知识库
+2026-04-20 15:39:39,223 - agent - INFO -vector_store.py-83- [加载知识库]D:\work\cs\AI\AI Agent\AI Agent\04.Agent项目演练---智能客服系统\data\选购指南.txt已经存在知识库
+2026-04-20 15:39:39,224 - agent - INFO -vector_store.py-83- [加载知识库]D:\work\cs\AI\AI Agent\AI Agent\04.Agent项目演练---智能客服系统\data\陶宇-前端开发工程师.pdf已经存在知识库
+2026-04-20 15:39:39,241 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有1条信息
+2026-04-20 15:39:39,242 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'NoneType'> 查询我当月的使用记录
+2026-04-20 15:39:41,511 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：get_user_id
+2026-04-20 15:39:41,511 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{})
+2026-04-20 15:39:41,511 - agent - INFO -middleware.py-24- [tool monitor]工具调用：get_user_id),执行成功
+2026-04-20 15:39:41,512 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有3条信息
+2026-04-20 15:39:41,512 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 1005
+2026-04-20 15:39:43,053 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：get_current_month
+2026-04-20 15:39:43,054 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{})
+2026-04-20 15:39:43,054 - agent - INFO -middleware.py-24- [tool monitor]工具调用：get_current_month),执行成功
+2026-04-20 15:39:43,054 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有5条信息
+2026-04-20 15:39:43,054 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 2025-03
+2026-04-20 15:39:44,808 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：fill_context_for_report
+2026-04-20 15:39:44,808 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{})
+2026-04-20 15:39:44,808 - agent - INFO -middleware.py-24- [tool monitor]工具调用：fill_context_for_report),执行成功
+2026-04-20 15:39:44,809 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有7条信息
+2026-04-20 15:39:44,809 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> fill_context_for_report工具已调用
+2026-04-20 15:39:46,566 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：fetch_external_data
+2026-04-20 15:39:46,566 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{'user_id': '1005', 'month': '2025-03'})
+2026-04-20 15:39:46,566 - agent - INFO -middleware.py-24- [tool monitor]工具调用：fetch_external_data),执行成功
+2026-04-20 15:39:46,569 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有9条信息
+2026-04-20 15:39:46,569 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> {"特征": "120㎡ | 老人 | 防滑砖", "清洁效率": "手动操作占比:93%\\n定时清扫使用率:2次/周", "耗材": "电池衰减:27%\\n水箱首次激活:使用1次", "对比": "语音控制功能已预约安装"}
+2026-04-20 15:39:48,299 - agent - INFO -middleware.py-20- [tool monitor]工具调用：执行工具名称：rag_summarize
+2026-04-20 15:39:48,299 - agent - INFO -middleware.py-21- [tool monitor]工具调用：执行入参：{'query': '老人使用扫地机器人注意事项和防滑砖地面清洁建议'})
+2026-04-20 15:39:48,299 - agent - INFO -middleware.py-24- [tool monitor]工具调用：rag_summarize),执行成功
+2026-04-20 15:39:52,320 - agent - INFO -middleware.py-38- [log_before_model]模型即将调用：带有11条信息
+2026-04-20 15:39:52,320 - agent - DEBUG -middleware.py-39- [log_before_model]<class 'str'> 老人使用扫地机器人时，应选择操作简便的机型，并确保地面无障碍物以防绊倒；在防滑砖地面清洁时，避免使用过多水分，建议调小水箱出水量或采用干拖模式，防止水渍残留导致滑倒。每次使用后及时清理主刷、尘盒及拖布，若地面有油污或灰尘结块，可先开启大吸力模式清扫，必要时手动预处理。
