@@ -1,0 +1,18 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="grpcio" />
+          <option value="opentelemetry-api" />
+          <option value="opentelemetry-exporter-otlp-proto-common" />
+          <option value="opentelemetry-proto" />
+          <option value="opentelemetry-sdk" />
+          <option value="opentelemetry-semantic-conventions" />
+          <option value="langgraph" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
