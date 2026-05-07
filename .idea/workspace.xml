@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05.langgraph学习/11time_travel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.env" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/studio/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/state_db/example.db" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/studio/state_db/example.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.idea/studio.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/.langgraph_checkpoint.1.pckl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/.langgraph_checkpoint.2.pckl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/.langgraph_checkpoint.3.pckl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/.langgraph_ops.pckl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/.langgraph_retry_counter.pckl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/store.pckl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/store.vectors.pckl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/01graph_simple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/02graph_chain.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/03graph_router.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/04graph_agent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/05graph_memory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/06graph-status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/07状态还原.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/08多种图式.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/09修剪和过滤消息.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/10graph_robt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/langgraph.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/state_db/example.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -24,22 +58,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ty0826"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ty0826&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ty0826/AI-Agent.git",
-    "accountId": "c3644fec-08bb-4adc-943b-1ded838ce7fc"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ty0826/AI-Agent.git&quot;,
+    &quot;accountId&quot;: &quot;c3644fec-08bb-4adc-943b-1ded838ce7fc&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="3DKexqy6c9OUuX0ZAhYoWFs01Re" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -48,7 +86,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.10graph_robt (1).executor": "Run",
     "Python.10graph_robt.executor": "Run",
+    "Python.11time_travel.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -56,11 +97,40 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ssh.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.11time_travel">
+    <configuration name="10graph_robt (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI Agent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05.langgraph学习" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05.langgraph学习/10graph_robt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="10graph_robt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI Agent" />
       <option name="ENV_FILES" value="" />
@@ -86,8 +156,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="11time_travel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI Agent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05.langgraph学习" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05.langgraph学习/11time_travel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.11time_travel" />
+        <item itemvalue="Python.10graph_robt (1)" />
         <item itemvalue="Python.10graph_robt" />
       </list>
     </recent_temporary>
@@ -95,7 +192,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-b63d5a1f7c97-b61e75351b1f-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.22158.340" />
+        <option value="bundled-python-sdk-024ed6589d45-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.23567.174" />
       </set>
     </attachedChunks>
   </component>
@@ -107,13 +204,47 @@
       <option name="presentableId" value="Default" />
       <updated>1778035439789</updated>
       <workItem from="1778035441638" duration="4432000" />
+      <workItem from="1778052362015" duration="10068000" />
+      <workItem from="1778134572378" duration="77000" />
+      <workItem from="1778134655462" duration="216000" />
+      <workItem from="1778134880229" duration="53000" />
+      <workItem from="1778134970194" duration="837000" />
+      <workItem from="1778135851962" duration="222000" />
+      <workItem from="1778136156895" duration="393000" />
+      <workItem from="1778136573803" duration="20000" />
+      <workItem from="1778136605431" duration="150000" />
+      <workItem from="1778136762973" duration="428000" />
+      <workItem from="1778137200773" duration="6757000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/05.langgraph学习/10graph_robt.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AI_Agent$10graph_robt.coverage" NAME="10graph_robt 覆盖结果" MODIFIED="1778036178465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习/studio" />
+    <SUITE FILE_PATH="coverage/AI_Agent$10graph_robt.coverage" NAME="10graph_robt 覆盖结果" MODIFIED="1778053188168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习/studio" />
+    <SUITE FILE_PATH="coverage/AI_Agent$10graph_robt__1_.coverage" NAME="10graph_robt (1) 覆盖结果" MODIFIED="1778058355638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$11time_travel.coverage" NAME="11time_travel 覆盖结果" MODIFIED="1778145287959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
   </component>
 </project>
