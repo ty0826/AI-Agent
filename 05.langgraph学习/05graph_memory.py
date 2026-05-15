@@ -5,7 +5,7 @@ from langchain_core.tools import tool
 from langgraph.prebuilt import ToolNode, tools_condition
 from langgraph.checkpoint.memory import MemorySaver
 
-model = ChatTongyi(model='qwen3-max')
+model = ChatTongyi(model='qwen3.5-plus')
 
 
 @tool(description='计算两个数的乘积')

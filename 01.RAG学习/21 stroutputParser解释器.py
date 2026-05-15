@@ -4,7 +4,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 
 parser = StrOutputParser()
-model = ChatTongyi(model='qwen3-max')
+model = ChatTongyi(model='qwen3-vl-235b-a22b-thinking')
 prompt = PromptTemplate.from_template("我姓：{lastname},刚生了一个{gender},请帮我起一个名字")
 
 chain = prompt | model | parser | model

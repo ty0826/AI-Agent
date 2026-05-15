@@ -3,7 +3,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 
 # 得到模型对象
 model = ChatTongyi(
-    model="qwen3-max"
+    model="qwen3-vl-235b-a22b-thinking"
 )
 message = [
     SystemMessage(content="你是一个情感专家"),

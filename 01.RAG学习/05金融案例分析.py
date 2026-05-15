@@ -32,7 +32,7 @@ for key, vaule in examples_data.items():
 
 for key in questions:
     response = client.chat.completions.create(
-        model="qwen3.5-plus",
+        model="qwen3-vl-235b-a22b-thinking",
         messages=messages + [{"role": "user", "content": f"按照实例回答这个问题{key}"}]
     )
     print(response.choices[0].message.content)

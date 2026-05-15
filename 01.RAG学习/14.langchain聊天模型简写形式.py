@@ -1,6 +1,6 @@
 from langchain_community.chat_models.tongyi import ChatTongyi
 
-model = ChatTongyi(model='qwen3-max')
+model = ChatTongyi(model='qwen3-vl-235b-a22b-thinking')
 
 messages=[
     ('system',' 你是一个情感专家'),

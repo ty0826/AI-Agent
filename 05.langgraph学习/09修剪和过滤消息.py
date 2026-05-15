@@ -6,7 +6,7 @@ messages = [AIMessage('hi', id='1'), HumanMessage('我是ty', id='2')]
 messages.append(AIMessage('我是个百科全书，对海洋生物知识了解的很多', name='AI', id='3'))
 messages.append(HumanMessage('我只是知道珊瑚，其他的还有什么我需要学习的嘛', name='Human', id='4'))
 
-llmModel = ChatTongyi(model='qwen3-max')
+llmModel = ChatTongyi(model='qwen3.5-plus')
 
 
 def chart_modal(state: MessagesState):

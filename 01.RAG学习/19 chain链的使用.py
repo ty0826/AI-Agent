@@ -16,7 +16,7 @@ history_data = [
     ("human", "你会安慰人不，怎么这么说，我是想要你给我正反馈的回应")
 ]
 model = ChatTongyi(
-    model="qwen3-max"
+    model="qwen3-vl-235b-a22b-thinking"
 )
 chain: RunnableSerializable = chat_prompe_template | model
 res = chain.invoke({"history": history_data})

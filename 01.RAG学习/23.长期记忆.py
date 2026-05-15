@@ -42,7 +42,7 @@ class FileChatMessageHistory(BaseChatMessageHistory):
             json.dump([], f, ensure_ascii=False)
 
 
-model = ChatTongyi(model="qwen3-max")
+model = ChatTongyi(model="qwen3-vl-235b-a22b-thinking")
 prompt = ChatPromptTemplate.from_messages([
     ('system', "你需要根据对话历史回答用户问题，对话历史："),
     MessagesPlaceholder('chat_history'),

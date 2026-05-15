@@ -6,7 +6,10 @@
     "03graph_router": "./03graph_router.py:graph",
     "04graph_agent": "./04graph_agent.py:graph",
     "05graph_memory": "./05graph_memory.py:graph",
-    "10graph_robt": "./10graph_robt.py:graph"
+    "10graph_robt": "./10graph_robt.py:graph",
+    "13-subgraph": "./13-subgraph.py:graph",
+    "14_mapReduce": "./14_mapReduce.py:graph",
+    "15_research_assistant": "./15_research_assistant.py:graph"
   },
   "env": "./.env",
   "python_version": "3.11",

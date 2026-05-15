@@ -6,7 +6,7 @@ client = OpenAI(
 )
 # 调用模型
 response = client.chat.completions.create(
-    model="qwen3.5-plus",  # 您可以按需更换为其它深度思考模型
+    model="qwen3-vl-235b-a22b-thinking",  # 您可以按需更换为其它深度思考模型
     messages=[
         {
             "role": "system",

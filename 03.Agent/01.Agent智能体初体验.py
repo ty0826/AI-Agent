@@ -8,7 +8,7 @@ def get_weater() -> str:
 
 ###构建智能体
 agent = create_agent(
-    model=ChatTongyi(model='qwen3-max'),  # 构建模型
+    model=ChatTongyi(model='qwen3-vl-235b-a22b-thinking'),  # 构建模型
     tools=[get_weater],  # 选择工具
     system_prompt='你是一个聊天助手，请回答用户问题'
 )

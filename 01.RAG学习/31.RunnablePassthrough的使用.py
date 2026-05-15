@@ -6,7 +6,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.vectorstores import InMemoryVectorStore
 
-modal = ChatTongyi(modle="qwen3-max")
+modal = ChatTongyi(modle="qwen3-vl-235b-a22b-thinking")
 prompts = ChatPromptTemplate.from_messages(
     [
         ('system', "以我提供的已知参考资料，回答一下问题，参考资料：{contentText}"),

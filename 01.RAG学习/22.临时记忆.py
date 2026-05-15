@@ -4,7 +4,7 @@ from langchain_core.output_parsers import StrOutputParser, JsonOutputParser  # �
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.chat_history import InMemoryChatMessageHistory
 
-model = ChatTongyi(model="qwen3-max")
+model = ChatTongyi(model="qwen3-vl-235b-a22b-thinking")
 # prompt = PromptTemplate.from_template("你需要根据对话历史回应用户问题，对话历史:{chat_historys};用户当前输入:{input},请给出回应")
 prompt = ChatPromptTemplate.from_messages(
     [

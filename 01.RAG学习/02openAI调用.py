@@ -6,7 +6,7 @@ client = OpenAI(
 )
 # 调用模型
 response = client.chat.completions.create(
-    model="qwen3-max",
+    model="qwen3-vl-235b-a22b-thinking",
     messages=[
         {
             "role": "system",

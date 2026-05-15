@@ -9,7 +9,7 @@ client = OpenAI(
 
 messages = [{"role": "user", "content": "你是谁,你可以做什么，擅长什么"}]
 completion = client.chat.completions.create(
-    model="qwen3.5-plus",  # 您可以按需更换为其它深度思考模型
+    model="qwen3-vl-235b-a22b-thinking",  # 您可以按需更换为其它深度思考模型
     messages=messages,
     extra_body={"enable_thinking": True},
     stream=True

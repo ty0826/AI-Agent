@@ -53,7 +53,7 @@ def get_weater(city: str) -> str:
 
 
 agent = create_agent(
-    model=ChatTongyi(model='qwen3-max'),
+    model=ChatTongyi(model='qwen3-vl-235b-a22b-thinking'),
     tools=[get_weater],
     middleware=[before_agent, after_agent, before_model, after_model, wrap_model, wrap_tool]
 )

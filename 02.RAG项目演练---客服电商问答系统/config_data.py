@@ -7,7 +7,7 @@ md5_path = os.path.join(BASE_DIR, 'md5.text')
 
 collection_name = 'rag-chroma-db'
 model = 'text-embedding-v4'
-chartModel = 'qwen3-max'
+chartModel = 'qwen3.5-plus'
 persist_directory = os.path.join(BASE_DIR, 'chroma-rag-db')
 
 chunk_size = 1000

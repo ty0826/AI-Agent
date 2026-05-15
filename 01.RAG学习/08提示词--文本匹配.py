@@ -52,7 +52,7 @@ for key, value in examples_data.items():
 
 for q in questions:
     res = client.chat.completions.create(
-        model="qwen3.5-plus",
+        model="qwen3-vl-235b-a22b-thinking",
         messages=messages + [{
             "role": "user",
             "content": f"句子1：[{q[0]}] 句子2：[{q[1]}]"

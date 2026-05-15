@@ -13,7 +13,7 @@ def get_info(name) -> str:
 
 
 agent = create_agent(
-    model=ChatTongyi(model='qwen3-max'),
+    model=ChatTongyi(model='qwen3-vl-235b-a22b-thinking'),
     tools=[get_price, get_info],
     system_prompt='你是一个智能助手，可以回答股票相关问题，'
 )

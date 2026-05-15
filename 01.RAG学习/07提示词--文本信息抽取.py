@@ -53,7 +53,7 @@ for item in examples_data:
 
 for item in questions:
     response = client.chat.completions.create(
-        model="qwen3.5-plus",
+        model="qwen3-vl-235b-a22b-thinking",
         messages=messages + [{"role": 'user', "content": f"请你按照上面实例，现在抽取这个句子的信息：{item}"}]
     )
     print(response.choices[0].message.content)

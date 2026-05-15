@@ -4,42 +4,37 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/05.langgraph学习/11time_travel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+    <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="历史记录，断点">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.idea/studio.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/.langgraph_checkpoint.1.pckl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/.langgraph_checkpoint.2.pckl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/.langgraph_checkpoint.3.pckl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/.langgraph_ops.pckl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/.langgraph_retry_counter.pckl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/store.pckl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/.langgraph_api/store.vectors.pckl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/01graph_simple.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/02graph_chain.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/03graph_router.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/04graph_agent.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/05graph_memory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/06graph-status.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/07状态还原.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/08多种图式.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/09修剪和过滤消息.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/10graph_robt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/langgraph.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/studio/state_db/example.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.RAG项目演练---客服电商问答系统/config_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/02.RAG项目演练---客服电商问答系统/config_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03.Agent/01.Agent智能体初体验.py" beforeDir="false" afterPath="$PROJECT_DIR$/03.Agent/01.Agent智能体初体验.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03.Agent/02.Agent的流式输出.py" beforeDir="false" afterPath="$PROJECT_DIR$/03.Agent/02.Agent的流式输出.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03.Agent/03.ReAct流程.py" beforeDir="false" afterPath="$PROJECT_DIR$/03.Agent/03.ReAct流程.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03.Agent/04.middleware中间件.py" beforeDir="false" afterPath="$PROJECT_DIR$/03.Agent/04.middleware中间件.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04.Agent项目演练---智能客服系统/config/rag.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/04.Agent项目演练---智能客服系统/config/rag.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/.env" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/.langgraph_api/.langgraph_checkpoint.1.pckl" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/.langgraph_api/.langgraph_checkpoint.1.pckl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/.langgraph_api/.langgraph_checkpoint.2.pckl" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/.langgraph_api/.langgraph_checkpoint.2.pckl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/.langgraph_api/.langgraph_checkpoint.3.pckl" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/.langgraph_api/.langgraph_checkpoint.3.pckl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/.langgraph_api/.langgraph_ops.pckl" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/.langgraph_api/.langgraph_ops.pckl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/.langgraph_api/.langgraph_retry_counter.pckl" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/.langgraph_api/.langgraph_retry_counter.pckl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/02graph_chain.py" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/02graph_chain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/03graph_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/03graph_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/04graph_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/04graph_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/05graph_memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/05graph_memory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/09修剪和过滤消息.py" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/09修剪和过滤消息.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/10graph_robt.py" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/10graph_robt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/11time_travel.py" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/11time_travel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.langgraph学习/langgraph.json" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/langgraph.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="152" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -86,9 +81,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.04graph_agent.executor": "Run",
     "Python.10graph_robt (1).executor": "Run",
     "Python.10graph_robt.executor": "Run",
     "Python.11time_travel.executor": "Run",
+    "Python.12-parallelization.executor": "Run",
+    "Python.12-parallelization并行 (1).executor": "Run",
+    "Python.13-subgraph.executor": "Run",
+    "Python.14_mapReduce.executor": "Debug",
+    "Python.15_.executor": "Run",
+    "Python.15_research_assistant (1).executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -101,12 +103,12 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ssh.settings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.11time_travel">
-    <configuration name="10graph_robt (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.15_research_assistant (1)">
+    <configuration name="04graph_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI Agent" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,7 +124,7 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05.langgraph学习/10graph_robt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05.langgraph学习/04graph_agent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,32 +133,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="10graph_robt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="AI Agent" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05.langgraph学习/studio" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05.langgraph学习/studio/10graph_robt.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="11time_travel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="13-subgraph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI Agent" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,7 +149,82 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05.langgraph学习/11time_travel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05.langgraph学习/13-subgraph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="14_mapReduce" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI Agent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05.langgraph学习" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05.langgraph学习/14_mapReduce.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="15_research_assistant (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI Agent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05.langgraph学习" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05.langgraph学习/15_research_assistant.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="15_research_assistant" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI Agent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05.langgraph学习" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="D:\work\cs\AI\AI Agent\05.langgraph学习\15_research_assistant.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,9 +235,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.11time_travel" />
-        <item itemvalue="Python.10graph_robt (1)" />
-        <item itemvalue="Python.10graph_robt" />
+        <item itemvalue="Python.15_research_assistant (1)" />
+        <item itemvalue="Python.14_mapReduce" />
+        <item itemvalue="Python.15_research_assistant" />
+        <item itemvalue="Python.04graph_agent" />
+        <item itemvalue="Python.13-subgraph" />
       </list>
     </recent_temporary>
   </component>
@@ -214,8 +268,21 @@
       <workItem from="1778136573803" duration="20000" />
       <workItem from="1778136605431" duration="150000" />
       <workItem from="1778136762973" duration="428000" />
-      <workItem from="1778137200773" duration="6757000" />
+      <workItem from="1778137200773" duration="10403000" />
+      <workItem from="1778204376290" duration="272000" />
+      <workItem from="1778205465346" duration="380000" />
+      <workItem from="1778206098035" duration="35694000" />
+      <workItem from="1778462554217" duration="74407000" />
     </task>
+    <task id="LOCAL-00001" summary="历史记录，断点">
+      <option name="closed" value="true" />
+      <created>1778147427069</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778147427069</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,19 +299,35 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="历史记录，断点" />
+    <option name="LAST_COMMIT_MESSAGE" value="历史记录，断点" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/05.langgraph学习/10graph_robt.py</url>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/05.langgraph学习/11time_travel.py</url>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/05.langgraph学习/15_example.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AI_Agent$12_parallelization.coverage" NAME="12-parallelization 覆盖结果" MODIFIED="1778314369444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$12_parallelization__1_.coverage" NAME="12-parallelization并行 (1) 覆盖结果" MODIFIED="1778316340189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$15_research_assistant__1_.coverage" NAME="15_research_assistant (1) 覆盖结果" MODIFIED="1778815066476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$10graph_robt.coverage" NAME="10graph_robt 覆盖结果" MODIFIED="1778053188168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习/studio" />
     <SUITE FILE_PATH="coverage/AI_Agent$10graph_robt__1_.coverage" NAME="10graph_robt (1) 覆盖结果" MODIFIED="1778058355638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
-    <SUITE FILE_PATH="coverage/AI_Agent$11time_travel.coverage" NAME="11time_travel 覆盖结果" MODIFIED="1778145287959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$15_.coverage" NAME="15_ 覆盖结果" MODIFIED="1778657279369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$14_mapReduce.coverage" NAME="14_mapReduce 覆盖结果" MODIFIED="1778661233589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$11time_travel.coverage" NAME="11time_travel 覆盖结果" MODIFIED="1778225794727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$04graph_agent.coverage" NAME="04graph_agent 覆盖结果" MODIFIED="1778643102393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$13_subgraph.coverage" NAME="13-subgraph 覆盖结果" MODIFIED="1778555064503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
   </component>
 </project>

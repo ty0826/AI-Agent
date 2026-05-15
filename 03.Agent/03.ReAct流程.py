@@ -14,7 +14,7 @@ def get_cm():
 
 
 agent = create_agent(
-    model=ChatTongyi(model='qwen3-max'),
+    model=ChatTongyi(model='qwen3-vl-235b-a22b-thinking'),
     tools=[get_weight, get_cm],
     system_prompt='你是一个遵循ReAct流程的智能体，必须遵循【思考-行动-观察-在思考】流程解决问题 ，并且你要告诉我你的思考过程，工具的调用原因，按照【思考、行动、观察】结构告知我'
 )

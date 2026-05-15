@@ -17,7 +17,7 @@ history_data = [
 prompt_text = chat_prompe_template.invoke({"history": history_data}).to_string()
 
 model = ChatTongyi(
-    model="qwen3-max"
+    model="qwen3-vl-235b-a22b-thinking"
 )
 res = model.stream(prompt_text)
 for chunk in res:

@@ -4,7 +4,7 @@ from langgraph.graph import StateGraph, START, END, MessagesState
 from langgraph.prebuilt import ToolNode, tools_condition
 from langchain_core.tools import tool
 
-model = ChatTongyi(model='qwen3-max')
+model = ChatTongyi(model='qwen3.5-plus')
 
 
 @tool(description='计算两个数的乘积')

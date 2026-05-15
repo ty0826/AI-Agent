@@ -11,7 +11,7 @@ srt2_template = PromptTemplate.from_template("名字是{name},说明其含义")
 
 json_template = JsonOutputParser()
 str_template = StrOutputParser()
-model = ChatTongyi(model="qwen3-max")
+model = ChatTongyi(model="qwen3-vl-235b-a22b-thinking")
 
 chain = srt1_template | model | json_template | srt2_template | model | str_template
 res:AIMessage= chain.stream({"lastname":"殷","gender":'女儿'})

@@ -18,6 +18,6 @@ few_template = FewShotPromptTemplate(
 )
 prompt_text = few_template.invoke(input={'input_word': "左"}).to_string()
 
-model = Tongyi(model='qwen-max')
+model = Tongyi(model='qwen3-vl-235b-a22b-thinking')
 res = model.invoke(input=prompt_text)
 print(res)

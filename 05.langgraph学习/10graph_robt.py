@@ -8,7 +8,7 @@ import os
 from IPython.display import Image, display
 from typing import Literal
 
-model = ChatTongyi(model='qwen3-max')
+model = ChatTongyi(model='qwen3.5-plus')
 
 
 ###默认的state中字段messages字段传递

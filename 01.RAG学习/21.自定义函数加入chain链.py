@@ -7,7 +7,7 @@ str1 = PromptTemplate.from_template('我姓{lastname},生了个{gender},请告�
 str2 = PromptTemplate.from_template("姓名：{name},帮我解释这个名字含义")
 
 strParser = StrOutputParser()
-model = ChatTongyi(model='qwen3-max')
+model = ChatTongyi(model='qwen3-vl-235b-a22b-thinking')
 
 # my_function = RunnableLambda(lambda ai_messgae: {"name": ai_messgae.content})
 

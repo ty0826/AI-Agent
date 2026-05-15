@@ -3,7 +3,7 @@ from langchain_community.chat_models.tongyi import ChatTongyi
 from langgraph.graph import MessagesState, START, END, StateGraph
 from langchain_core.tools import tool
 
-model = ChatTongyi(model='qwen3-max')
+model = ChatTongyi(model='qwen3-vl-235b-a22b-thinking')
 
 
 @tool(description='计算两个数的相乘积')
