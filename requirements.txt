@@ -150,3 +150,5 @@ langsmith>=0.7.31
 aiohttp>=3.13.4
 IPython
 langgraph-cli
+trustcall
+langchain_openai
