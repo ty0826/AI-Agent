@@ -1,18 +1,18 @@
 """"
     构建长期记忆的智能体
 """
+import os
 import uuid
 from datetime import datetime
+from typing import Optional, Literal, TypedDict
 from langchain_core.messages import SystemMessage, merge_message_runs, HumanMessage
 from langchain_core.runnables import RunnableConfig
 from langchain_openai import ChatOpenAI
-import os
-from typing import Optional, Literal, TypedDict
-from pydantic import BaseModel, Field
-from langgraph.graph import StateGraph, START, END, MessagesState
 from langgraph.checkpoint.memory import InMemorySaver
-from langgraph.store.memory import InMemoryStore
+from langgraph.graph import StateGraph, START, END, MessagesState
 from langgraph.store.base import BaseStore
+from langgraph.store.memory import InMemoryStore
+from pydantic import BaseModel, Field
 from trustcall import create_extractor
 
 os.environ["LANGCHAIN_TRACING_V2"] = "false"
@@ -30,12 +30,13 @@ class Spy:
 
     def __call__(self, run):
         q = [run]
+        print(run)
         while q:
             r = q.pop()
-            if r.chind_runs:
-                q.extend(r.chind_runs)
+            if r.child_runs:
+                q.extend(r.child_runs)
             if r.run_type == 'chat_model':
-                self.called_tools.append(r.outputs['generations'][0][0]['message']['kwargs']['tool_call'])
+                self.called_tools.append(r.outputs['generations'][0][0]['message']['kwargs']['tool_calls'])
 
 
 ###用户属性
@@ -121,7 +122,7 @@ def task_mAIstro(state: MessagesState, config: RunnableConfig, store: BaseStore)
 
     namespace = ('todo', user_id)
     memories = store.search(namespace)
-    todo_memory = '\n'.join(f'{item.value}' for item in memories)
+    todo_memory = '\n'.join(f'{item.value}' for item in memories) if memories else ''
 
     namespace = ('instructions', user_id)
     memories = store.search(namespace)
@@ -170,8 +171,7 @@ def update_profile(state: MessagesState, config: RunnableConfig, store: BaseStor
     update_messages = list(
         merge_message_runs(messages=[SystemMessage(content=TRUSTCALL_INSTRUCTION_FORMAT)] + state['messages'][:-1]))
     result = profile_trustcall_create.invoke({'messages': update_messages, 'existing': existing_memory})
-
-    for i, rmate in zip(result['responses'], result['responses_metadata']):
+    for i, rmate in zip(result['responses'], result['response_metadata']):
         store.put(
             namespace,
             rmate.get('json_doc_id', str(uuid.uuid4())),
@@ -202,11 +202,11 @@ def extract_tool_info(tool_calls, schema_name='Memory'):
     result_parts = []
     for change in changes:
         if change['type'] == 'update':
-            result_parts.append({
+            result_parts.append(
                 f"Document {change['doc_id']} updated:\n"
                 f"Plan: {change['planned_edits']}\n"
                 f"Added content: {change['value']}"
-            })
+            )
         else:
             result_parts.append(
                 f"New {schema_name} created:\n"
@@ -219,7 +219,7 @@ def update_todos(state: MessagesState, config: RunnableConfig, store: BaseStore)
     user_id = config['configurable']['user_id']
     namespace = ('todo', user_id)
     existing_items = store.search(namespace)
-    tool_name = 'todo'
+    tool_name = 'ToDo'
     existing_memory = ([(item.key, tool_name, item.value) for item in existing_items] if existing_items else [])
     TRUSTCALL_INSTRUCTION_FORMAT = TRUSTCALL_INSTRUCTION.format(time=datetime.now().isoformat())
     update_messages = list(
@@ -228,16 +228,16 @@ def update_todos(state: MessagesState, config: RunnableConfig, store: BaseStore)
     todo_extractor = create_extractor(
         model,
         tools=[ToDo],
-        tool_choice=tool_name,
+        tool_choice='ToDo',
         enable_inserts=True,
     ).with_listeners(on_end=say)
 
     result = todo_extractor.invoke({'messages': update_messages, 'existing': existing_memory})
-    for i, rmate in zip(result['responses'], result['responses_metadata']):
+    for i, rmate in zip(result['responses'], result['response_metadata']):
         store.put(
             namespace,
             rmate.get('json_doc_id', str(uuid.uuid4())),
-            i.model.dump(mode='json')
+            i.model_dump(mode='json')
         )
 
     tool_calls = state['messages'][-1].tool_calls
@@ -252,8 +252,9 @@ def update_instructions(state: MessagesState, config: RunnableConfig, store: Bas
     existing_memory = store.get(namespace, key)
     system_msg = CREATE_INSTRUCTIONS.format(current_instructions=existing_memory.value if existing_memory else None)
     new_memory = model.invoke(
-        [SystemMessage(content=system_msg) + state['messages'][:-1]] + HumanMessage(content="请更新"))
-    store.put(namespace, key, {'memory': new_memory.value})
+        [SystemMessage(content=system_msg)] + state['messages'][:-1] + [HumanMessage(content="请更新")])
+    print(new_memory)
+    store.put(namespace, key, {'memory': new_memory})
     tool_calls = state['messages'][-1].tool_calls
     return {'messages': [{'role': 'tool', 'content': 'update instructions', 'tool_call_id': tool_calls[0]['id']}]}
 
@@ -286,4 +287,22 @@ for chunk in graph.stream({'messages': input_messages}, config, stream_mode='val
 
 input_messages = [HumanMessage(content='我明天要去一趟上海出差')]
 for chunk in graph.stream({'messages': input_messages}, config, stream_mode='values'):
-    chunk['messages'][-1].pretty_print()
+    pass
+    # chunk['messages'][-1].pretty_print()
+input_messages = [HumanMessage(content='不对，行程有变化我明天要去一趟北京出差,')]
+for chunk in graph.stream({'messages': input_messages}, config, stream_mode='values'):
+    pass
+
+input_messages=[HumanMessage(content='在创建或更新待办事项时，请包含具体的本地商家/供应商')]
+for chunk in graph.stream({'messages': input_messages}, config, stream_mode='values'):
+    pass
+
+profile = memoryStore.search(('profile', '1'))
+todo = memoryStore.search(('todo', '1'))
+instructions = memoryStore.search(('instructions', '1'))
+print(profile)
+print('#' * 20)
+print(todo)
+print('#' * 20)
+print(instructions)
+print('#' * 20)
