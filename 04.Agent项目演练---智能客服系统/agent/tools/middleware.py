@@ -1,13 +1,11 @@
 ###中间件工具
 from typing import Callable
-
 from langchain.agents import AgentState
 from langchain.agents.middleware import wrap_tool_call, before_model, dynamic_prompt, ModelRequest
 from langchain.tools.tool_node import ToolCallRequest
 from langchain_core.messages import ToolMessage
 from langgraph.runtime import Runtime
 from langgraph.types import Command
-
 from utils.logger_handle import logger
 from utils.prompt_loader import load_report_prompts, load_main_prompts
 

@@ -18,8 +18,8 @@ from trustcall import create_extractor
 os.environ["LANGCHAIN_TRACING_V2"] = "false"
 
 model = ChatOpenAI(
-    model='qwen3-vl-235b-a22b-thinking',
-    api_key="sk-1fababd8c9e74ee48c9f0487bf2323fe",
+    model='qwen3-max',
+    api_key="sk-c083a4bb1e734f1f93395071fc32d818",
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
 )
 
@@ -30,7 +30,6 @@ class Spy:
 
     def __call__(self, run):
         q = [run]
-        print(run)
         while q:
             r = q.pop()
             if r.child_runs:
@@ -133,7 +132,6 @@ def task_mAIstro(state: MessagesState, config: RunnableConfig, store: BaseStore)
     # parallel_tool_calls=False禁止模型并行调用多个工具
     response = model.bind_tools([UpdateMemory], parallel_tool_calls=False).invoke(
         [SystemMessage(content=system_msg)] + state['messages'])
-
     return {'messages': [response]}
 
 
@@ -253,7 +251,6 @@ def update_instructions(state: MessagesState, config: RunnableConfig, store: Bas
     system_msg = CREATE_INSTRUCTIONS.format(current_instructions=existing_memory.value if existing_memory else None)
     new_memory = model.invoke(
         [SystemMessage(content=system_msg)] + state['messages'][:-1] + [HumanMessage(content="请更新")])
-    print(new_memory)
     store.put(namespace, key, {'memory': new_memory})
     tool_calls = state['messages'][-1].tool_calls
     return {'messages': [{'role': 'tool', 'content': 'update instructions', 'tool_call_id': tool_calls[0]['id']}]}
@@ -294,15 +291,15 @@ for chunk in graph.stream({'messages': input_messages}, config, stream_mode='val
     pass
 
 input_messages=[HumanMessage(content='在创建或更新待办事项时，请包含具体的本地商家/供应商')]
-for chunk in graph.stream({'messages': input_messages}, config, stream_mode='values'):
-    pass
+res= graph.invoke({'messages': input_messages}, config)
+print(res)
 
-profile = memoryStore.search(('profile', '1'))
-todo = memoryStore.search(('todo', '1'))
-instructions = memoryStore.search(('instructions', '1'))
-print(profile)
-print('#' * 20)
-print(todo)
-print('#' * 20)
-print(instructions)
-print('#' * 20)
+# profile = memoryStore.search(('profile', '1'))
+# todo = memoryStore.search(('todo', '1'))
+# instructions = memoryStore.search(('instructions', '1'))
+# print(profile)
+# print('#' * 20)
+# print(todo)
+# print('#' * 20)
+# print(instructions)
+# print('#' * 20)

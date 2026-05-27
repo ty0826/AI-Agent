@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="PY-253.31033.139">
+  <component name="dataSourceStorageLocal" created-in="PY-261.23567.174">
     <data-source name="example" uuid="0f7225a4-0bde-4d7a-bed8-51646ecf7b52">
       <database-info product="SQLite" version="3.51.1" jdbc-version="4.2" driver-name="SQLite JDBC" driver-version="3.51.1.0" dbms="SQLITE" exact-version="3.51.1" exact-driver-version="3.51">
         <identifier-quote-string>&quot;</identifier-quote-string>
@@ -10,6 +10,21 @@
       <schema-mapping>
         <introspection-scope>
           <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="tyLocal" uuid="a3ebdda3-c71b-4701-bfa5-9d2e0a004c31">
+      <database-info product="MySQL" version="5.7.44-log" jdbc-version="4.2" driver-name="Amazon Web Services (AWS) Advanced JDBC Wrapper" driver-version="Amazon Web Services (AWS) Advanced JDBC Wrapper 3.3.0 ( Revision: 095ec1b6f33b49aaa04d8c06c9e1a95227d24445 )" dbms="MYSQL" exact-version="5.7.44" exact-driver-version="3.3">
+        <extra-name-characters>$</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+        <jdbc-catalog-is-schema>true</jdbc-catalog-is-schema>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="fastapi_test" />
         </introspection-scope>
       </schema-mapping>
     </data-source>

@@ -15,8 +15,7 @@ os.environ["LANGCHAIN_TRACING_V2"] = "false"
 model = ChatTongyi(model='qwen-max')
 memory = InMemorySaver()
 memoryStore = InMemoryStore()
-MODEL_SYSTEM_MESSAGE = """你是一个带有记忆功能的助手，可以根据用户信息提供个性化回复。如果你拥有关于该用户的记忆，请利用这些记忆来个性化你的回答
-以下是用户的记忆信息{memory}"""
+MODEL_SYSTEM_MESSAGE = """你是一个带有记忆功能的助手，可以根据用户信息提供个性化回复。如果你拥有关于该用户的记忆，请利用这些记忆来个性化你的回答以下是用户的记忆信息{memory}"""
 # 根据聊天记录和已有记忆创建新的用户记忆
 CREATE_MEMORY_INSTRUCTION = """你正在收集关于用户的信息，以便于你个性化的回复。当前用户信息：{memory} 
 说明：

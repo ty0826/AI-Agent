@@ -5,8 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/04.Agent项目演练---智能客服系统" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/06.fastApi/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.14 (AI-Agent)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.13 (AI Agent) (4)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
