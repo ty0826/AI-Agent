@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="历史记录，断点">
+    <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="feat:fastApi">
       <change beforePath="$PROJECT_DIR$/.idea/AI Agent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AI Agent.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04.Agent项目演练---智能客服系统/agent/tools/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/04.Agent项目演练---智能客服系统/agent/tools/middleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/16_langgraph_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/16_langgraph_store.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.langgraph学习/19_long_team_memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/05.langgraph学习/19_long_team_memory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +47,9 @@
     &quot;accountId&quot;: &quot;c3644fec-08bb-4adc-943b-1ded838ce7fc&quot;
   }
 }</component>
+  <component name="HttpClientOnboardingState">{
+  &quot;isOnboardingCommentShown&quot;: true
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -67,50 +66,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.04graph_agent.executor": "Run",
-    "Python.10graph_robt (1).executor": "Run",
-    "Python.10graph_robt.executor": "Run",
-    "Python.11time_travel.executor": "Run",
-    "Python.12-parallelization.executor": "Run",
-    "Python.12-parallelization并行 (1).executor": "Run",
-    "Python.13-subgraph.executor": "Run",
-    "Python.14_mapReduce.executor": "Debug",
-    "Python.15_.executor": "Run",
-    "Python.15_research_assistant (1).executor": "Run",
-    "Python.16_langgraph_store.executor": "Run",
-    "Python.17_memoryschema_profile.executor": "Run",
-    "Python.18_memoryCollection.executor": "Run",
-    "Python.19_long_team_memory.executor": "Run",
-    "Python.20demo.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.04graph_agent.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10graph_robt (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.10graph_robt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.11time_travel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.12-parallelization.executor&quot;: &quot;Run&quot;,
+    &quot;Python.12-parallelization并行 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.13-subgraph.executor&quot;: &quot;Run&quot;,
+    &quot;Python.14_mapReduce.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.15_.executor&quot;: &quot;Run&quot;,
+    &quot;Python.15_research_assistant (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.16_langgraph_store.executor&quot;: &quot;Run&quot;,
+    &quot;Python.17_memoryschema_profile.executor&quot;: &quot;Run&quot;,
+    &quot;Python.18_memoryCollection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.19_long_team_memory.executor&quot;: &quot;Run&quot;,
+    &quot;Python.20demo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql_aurora"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql_aurora&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\cs\AI\AI Agent\06.fastApi" />
@@ -255,8 +254,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
-        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
+        <option value="bundled-python-sdk-024ed6589d45-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.23567.174" />
       </set>
     </attachedChunks>
   </component>
@@ -285,6 +283,7 @@
       <workItem from="1778462554217" duration="112940000" />
       <workItem from="1779348650056" duration="23217000" />
       <workItem from="1779508284438" duration="12973000" />
+      <workItem from="1780016812666" duration="21074000" />
     </task>
     <task id="LOCAL-00001" summary="历史记录，断点">
       <option name="closed" value="true" />
@@ -294,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778147427069</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat:fastApi">
+      <option name="closed" value="true" />
+      <created>1779873235749</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779873235749</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +320,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="历史记录，断点" />
-    <option name="LAST_COMMIT_MESSAGE" value="历史记录，断点" />
+    <MESSAGE value="feat:fastApi" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:fastApi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -321,6 +329,11 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/05.langgraph学习/11time_travel.py</url>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/Lib/site-packages/fastapi/applications.py</url>
+          <line>1377</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

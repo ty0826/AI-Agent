@@ -7,8 +7,8 @@ prompt_template = PromptTemplate.from_template(
 # 调用.fomate方法直接注入
 # 如果直接使用注入方式，也可以使用prompt_template字符串形式，只不过不能基于chain链形式
 # prompt_text = prompt_template.format(lastname='张', gender='女')
-# model = Tongyi(model='qwen3-vl-235b-a22b-thinking')
-# res = model.invoke(input=prompt_text)
+# models = Tongyi(models='qwen3-vl-235b-a22b-thinking')
+# res = models.invoke(input=prompt_text)
 # print(res)
 
 
