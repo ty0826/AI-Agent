@@ -30,5 +30,18 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="0@localhost" uuid="a440b3bf-df44-4ab5-87e2-bceb46a683c6">
+      <database-info product="Redis Standalone" version="8.8.0" jdbc-version="4.2" driver-name="Redis JDBC Driver" driver-version="1.5" dbms="REDIS" exact-version="8.8.0" exact-driver-version="1.5">
+        <jdbc-catalog-is-schema>true</jdbc-catalog-is-schema>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-provider>no-auth</auth-provider>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
   </component>
 </project>
