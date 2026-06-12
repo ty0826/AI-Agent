@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="feat:fastApi">
-      <change beforePath="$PROJECT_DIR$/.idea/AI Agent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AI Agent.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07新闻头条---fastApi/crud/news.py" beforeDir="false" afterPath="$PROJECT_DIR$/07新闻头条---fastApi/crud/news.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07新闻头条---fastApi/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/07新闻头条---fastApi/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07新闻头条---fastApi/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/07新闻头条---fastApi/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07新闻头条---fastApi/routers/news.py" beforeDir="false" afterPath="$PROJECT_DIR$/07新闻头条---fastApi/routers/news.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07新闻头条---fastApi/routers/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/07新闻头条---fastApi/routers/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07新闻头条---fastApi/utils/exception_handlers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/07新闻头条---fastApi/utils/response.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/07新闻头条---fastApi/uv.lock" beforeDir="false" afterPath="$PROJECT_DIR$/07新闻头条---fastApi/uv.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,12 +68,26 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python 测试.Python 测试 (test_response_interceptor.py 内).executor": "Run",
+    "Python.01tool.executor": "Run",
+    "Python.02Memory.executor": "Run",
+    "Python.03多模态.executor": "Debug",
     "Python.04graph_agent.executor": "Run",
+    "Python.04私人厨师.executor": "Run",
+    "Python.05MCP.executor": "Run",
+    "Python.05context.executor": "Run",
+    "Python.06json转换.executor": "Run",
+    "Python.06multi-agent.executor": "Run",
+    "Python.07婚礼助手.executor": "Run",
+    "Python.08middleware.executor": "Run",
+    "Python.09email-human-pop.executor": "Run",
+    "Python.10dynamic_agent.executor": "Run",
     "Python.10graph_robt (1).executor": "Run",
     "Python.10graph_robt.executor": "Run",
+    "Python.11dynamic-agent-change.executor": "Run",
     "Python.11time_travel.executor": "Run",
     "Python.12-parallelization.executor": "Run",
     "Python.12-parallelization并行 (1).executor": "Run",
+    "Python.12email-assitant.executor": "Run",
     "Python.13-subgraph.executor": "Run",
     "Python.14_mapReduce.executor": "Debug",
     "Python.15_.executor": "Run",
@@ -95,6 +98,8 @@
     "Python.19_long_team_memory.executor": "Run",
     "Python.20demo.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.mcp.executor": "Run",
+    "Python.test_mcp (1).executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -127,12 +132,13 @@
       <recent name="F:\work\cs\AI\AI Agent\07新闻头条---fastApi\crud" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\work\cs\AI\AI Agent\01langchain学习\05mcp" />
       <recent name="D:\work\cs\AI\AI Agent\07新闻头条---fastApi\utils" />
       <recent name="D:\work\cs\AI\AI Agent\06.fastApi" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.19_long_team_memory">
-    <configuration name="18_memoryCollection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.12email-assitant">
+    <configuration name="08middleware" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI Agent" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,64 +147,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05.langgraph学习" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05.langgraph学习/18_memoryCollection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="19_long_team_memory" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="AI Agent" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05.langgraph学习" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05.langgraph学习/19_long_team_memory.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="20demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="AI Agent" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05.langgraph学习" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01langchain学习" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05.langgraph学习/20demo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01langchain学习/08middleware.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -207,7 +163,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="09email-human-pop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI Agent" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -216,14 +172,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06.fastApi/01_fastAPl" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01langchain学习" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="D:\work\cs\AI\AI Agent\06.fastApi\main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01langchain学习/09email-human-pop.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -232,31 +188,88 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python 测试 (F:/work/cs/AI/AI Agent/07新闻头条---fastApi/tests/test_response_interceptor.py 内)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="10dynamic_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI Agent" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/07新闻头条---fastApi" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01langchain学习" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/07新闻头条---fastApi/tests/test_response_interceptor.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01langchain学习/10dynamic_agent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="11dynamic-agent-change" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI Agent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01langchain学习" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01langchain学习/11dynamic-agent-change.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="12email-assitant" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI Agent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01langchain学习" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01langchain学习/12email-assitant.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.19_long_team_memory" />
-        <item itemvalue="Python 测试.Python 测试 (F:/work/cs/AI/AI Agent/07新闻头条---fastApi/tests/test_response_interceptor.py 内)" />
-        <item itemvalue="Python.20demo" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.18_memoryCollection" />
+        <item itemvalue="Python.12email-assitant" />
+        <item itemvalue="Python.11dynamic-agent-change" />
+        <item itemvalue="Python.10dynamic_agent" />
+        <item itemvalue="Python.09email-human-pop" />
+        <item itemvalue="Python.08middleware" />
       </list>
     </recent_temporary>
   </component>
@@ -297,6 +310,8 @@
       <workItem from="1780465895365" duration="1618000" />
       <workItem from="1780467538724" duration="34518000" />
       <workItem from="1780634939987" duration="10125000" />
+      <workItem from="1781171406929" duration="445000" />
+      <workItem from="1781172312846" duration="20214000" />
     </task>
     <task id="LOCAL-00001" summary="历史记录，断点">
       <option name="closed" value="true" />
@@ -353,21 +368,37 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AI_Agent$20demo.coverage" NAME="20demo 覆盖结果" MODIFIED="1779850366491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
-    <SUITE FILE_PATH="coverage/AI_Agent$12_parallelization.coverage" NAME="12-parallelization 覆盖结果" MODIFIED="1778314369444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$04.coverage" NAME="04私人厨师 覆盖结果" MODIFIED="1781059866971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$07.coverage" NAME="07婚礼助手 覆盖结果" MODIFIED="1781157168632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$16_langgraph_store.coverage" NAME="16_langgraph_store 覆盖结果" MODIFIED="1779261705898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
-    <SUITE FILE_PATH="coverage/AI_Agent$18_memoryCollection.coverage" NAME="18_memoryCollection 覆盖结果" MODIFIED="1779356567901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$05context.coverage" NAME="05context 覆盖结果" MODIFIED="1781142186026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$12_parallelization__1_.coverage" NAME="12-parallelization并行 (1) 覆盖结果" MODIFIED="1778316340189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$12email_assitant.coverage" NAME="12email-assitant 覆盖结果" MODIFIED="1781258431877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$test_mcp__1_.coverage" NAME="test_mcp (1) 覆盖结果" MODIFIED="1781082492090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习/mcp" />
     <SUITE FILE_PATH="coverage/AI_Agent$10graph_robt.coverage" NAME="10graph_robt 覆盖结果" MODIFIED="1778053188168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习/studio" />
-    <SUITE FILE_PATH="coverage/AI_Agent$10graph_robt__1_.coverage" NAME="10graph_robt (1) 覆盖结果" MODIFIED="1778058355638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$main.coverage" NAME="main 覆盖结果" MODIFIED="1779680008804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06.fastApi/01_fastAPl" />
-    <SUITE FILE_PATH="coverage/AI_Agent$15_.coverage" NAME="15_ 覆盖结果" MODIFIED="1778657279369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
-    <SUITE FILE_PATH="coverage/AI_Agent$14_mapReduce.coverage" NAME="14_mapReduce 覆盖结果" MODIFIED="1778661233589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$19_long_team_memory.coverage" NAME="19_long_team_memory 覆盖结果" MODIFIED="1780639987317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$17_memoryschema_profile.coverage" NAME="17_memoryschema_profile 覆盖结果" MODIFIED="1779353327566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
-    <SUITE FILE_PATH="coverage/AI_Agent$11time_travel.coverage" NAME="11time_travel 覆盖结果" MODIFIED="1778225794727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$06json.coverage" NAME="06json转换 覆盖结果" MODIFIED="1780910378504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01.RAG学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$04graph_agent.coverage" NAME="04graph_agent 覆盖结果" MODIFIED="1778643102393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
-    <SUITE FILE_PATH="coverage/AI_Agent$.coverage" NAME=" 覆盖结果" MODIFIED="1780453413081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/07新闻头条---fastApi" />
-    <SUITE FILE_PATH="coverage/AI_Agent$15_research_assistant__1_.coverage" NAME="15_research_assistant (1) 覆盖结果" MODIFIED="1778815066476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$mcp.coverage" NAME="mcp 覆盖结果" MODIFIED="1781079257016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习/mcp" />
+    <SUITE FILE_PATH="coverage/AI_Agent$01tool.coverage" NAME="01tool 覆盖结果" MODIFIED="1780973627713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$10dynamic_agent.coverage" NAME="10dynamic_agent 覆盖结果" MODIFIED="1781250266516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$13_subgraph.coverage" NAME="13-subgraph 覆盖结果" MODIFIED="1778555064503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$06multi_agent.coverage" NAME="06multi-agent 覆盖结果" MODIFIED="1781143471590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$05MCP.coverage" NAME="05MCP 覆盖结果" MODIFIED="1781076391300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$12_parallelization.coverage" NAME="12-parallelization 覆盖结果" MODIFIED="1778314369444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$18_memoryCollection.coverage" NAME="18_memoryCollection 覆盖结果" MODIFIED="1779356567901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$08middleware.coverage" NAME="08middleware 覆盖结果" MODIFIED="1781166200121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$10graph_robt__1_.coverage" NAME="10graph_robt (1) 覆盖结果" MODIFIED="1778058355638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$03.coverage" NAME="03多模态 覆盖结果" MODIFIED="1780976902147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$15_.coverage" NAME="15_ 覆盖结果" MODIFIED="1778657279369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$14_mapReduce.coverage" NAME="14_mapReduce 覆盖结果" MODIFIED="1778661233589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$.coverage" NAME=" 覆盖结果" MODIFIED="1780453413081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/07新闻头条---fastApi" />
+    <SUITE FILE_PATH="coverage/AI_Agent$11time_travel.coverage" NAME="11time_travel 覆盖结果" MODIFIED="1778225794727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$02Memory.coverage" NAME="02Memory 覆盖结果" MODIFIED="1780975907683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$09email_human_pop.coverage" NAME="09email-human-pop 覆盖结果" MODIFIED="1781235977558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$11dynamic_agent_change.coverage" NAME="11dynamic-agent-change 覆盖结果" MODIFIED="1781251437802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$15_research_assistant__1_.coverage" NAME="15_research_assistant (1) 覆盖结果" MODIFIED="1778815066476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
   </component>
 </project>
