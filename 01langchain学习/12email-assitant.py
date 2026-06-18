@@ -117,7 +117,17 @@ agent.invoke(
 response = agent.invoke(
     Command(
         resume={
-            "decisions": [{"type": "approve"}]
+            "decisions": [{
+                "type": "edit",
+                "edited_action": {
+                    "name": "send_email",
+                    "args": {
+                        "to": "YinWenxia",
+                        "subject": "like",
+                        "content": "I like you",
+                    }
+                }
+            }]
         }
     ),
     config
