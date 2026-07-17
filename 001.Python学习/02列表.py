@@ -2,7 +2,7 @@ list = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
 """
 列表是有序，可重复，可修改
 """
-print(type(list))#<class 'list'>
+print(type(list))  # <class 'list'>
 print(list[0], list[-1])  # A,I
 print(list[0:3:1])  # [A,B,C]
 print(list[:3:1])  # [A,B,C]
@@ -45,3 +45,9 @@ new_list2 = [i ** 2 for i in range(1, 21)]
 print(new_list2)  # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400]
 new_list3 = [i ** 2 for i in range(1, 21) if i % 2 == 0]
 print(new_list3)  # [4, 16, 36, 64, 100, 144, 196, 256, 324, 400]
+
+print(''.join(map(str, [1, 2, 3, 4])))  # 1234
+print(','.join(map(str, [1, 2, 3, 4])))  # 1,2,3,4
+print(','.join(["a", "b", "c", "d"]))  # a,b,c,d
+print('a,b,c,g'.split(','))  # ['a', 'b', 'c', 'g']
+print('1,2,3,4'.split(',')) #['1', '2', '3', '4']

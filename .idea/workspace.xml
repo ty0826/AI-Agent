@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="feat:python基础">
+    <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="feat:python数据类型">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/001.Python学习/01输入输出.py" beforeDir="false" afterPath="$PROJECT_DIR$/001.Python学习/01输入输出.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/001.Python学习/02列表.py" beforeDir="false" afterPath="$PROJECT_DIR$/001.Python学习/02列表.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -64,77 +65,85 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python 测试.Python 测试 (test_response_interceptor.py 内).executor": "Run",
-    "Python.01tool.executor": "Run",
-    "Python.01输入输出.executor": "Run",
-    "Python.02Memory.executor": "Run",
-    "Python.02列表.executor": "Run",
-    "Python.03多模态.executor": "Debug",
-    "Python.03字符串.executor": "Run",
-    "Python.04graph_agent.executor": "Run",
-    "Python.04tuple.executor": "Run",
-    "Python.04私人厨师.executor": "Run",
-    "Python.05MCP.executor": "Run",
-    "Python.05context.executor": "Run",
-    "Python.05set.executor": "Run",
-    "Python.06dict.executor": "Run",
-    "Python.06json转换.executor": "Run",
-    "Python.06multi-agent.executor": "Run",
-    "Python.07函数.executor": "Debug",
-    "Python.07婚礼助手.executor": "Run",
-    "Python.08middleware.executor": "Run",
-    "Python.08数据注释.executor": "Run",
-    "Python.09email-human-pop.executor": "Run",
-    "Python.10dynamic_agent.executor": "Run",
-    "Python.10graph_robt (1).executor": "Run",
-    "Python.10graph_robt.executor": "Run",
-    "Python.11dynamic-agent-change.executor": "Run",
-    "Python.11time_travel.executor": "Run",
-    "Python.12-parallelization.executor": "Run",
-    "Python.12-parallelization并行 (1).executor": "Run",
-    "Python.12email-assitant.executor": "Run",
-    "Python.13-subgraph.executor": "Run",
-    "Python.14_mapReduce.executor": "Debug",
-    "Python.15_.executor": "Run",
-    "Python.15_research_assistant (1).executor": "Run",
-    "Python.16_langgraph_store.executor": "Run",
-    "Python.17_memoryschema_profile.executor": "Run",
-    "Python.18_memoryCollection.executor": "Run",
-    "Python.19_long_team_memory.executor": "Run",
-    "Python.20demo.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.mcp.executor": "Run",
-    "Python.test_mcp (1).executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "F:/work/cs/AI/AI Agent/07新闻头条---fastApi/crud",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python 测试.Python 测试 (test_response_interceptor.py 内).executor&quot;: &quot;Run&quot;,
+    &quot;Python.01tool.executor&quot;: &quot;Run&quot;,
+    &quot;Python.01输入输出.executor&quot;: &quot;Run&quot;,
+    &quot;Python.02Memory.executor&quot;: &quot;Run&quot;,
+    &quot;Python.02列表.executor&quot;: &quot;Run&quot;,
+    &quot;Python.03多模态.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.03字符串.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04graph_agent.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04tuple.executor&quot;: &quot;Run&quot;,
+    &quot;Python.04私人厨师.executor&quot;: &quot;Run&quot;,
+    &quot;Python.05MCP.executor&quot;: &quot;Run&quot;,
+    &quot;Python.05context.executor&quot;: &quot;Run&quot;,
+    &quot;Python.05set.executor&quot;: &quot;Run&quot;,
+    &quot;Python.06dict.executor&quot;: &quot;Run&quot;,
+    &quot;Python.06json转换.executor&quot;: &quot;Run&quot;,
+    &quot;Python.06multi-agent.executor&quot;: &quot;Run&quot;,
+    &quot;Python.07函数.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.07婚礼助手.executor&quot;: &quot;Run&quot;,
+    &quot;Python.08middleware.executor&quot;: &quot;Run&quot;,
+    &quot;Python.08数据注释.executor&quot;: &quot;Run&quot;,
+    &quot;Python.09email-human-pop.executor&quot;: &quot;Run&quot;,
+    &quot;Python.09类和对象 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.09面向对象.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10dynamic_agent.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10graph_robt (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.10graph_robt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.10魔法方法.executor&quot;: &quot;Run&quot;,
+    &quot;Python.11dynamic-agent-change.executor&quot;: &quot;Run&quot;,
+    &quot;Python.11time_travel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.11类方法--案例.executor&quot;: &quot;Run&quot;,
+    &quot;Python.12-parallelization.executor&quot;: &quot;Run&quot;,
+    &quot;Python.12-parallelization并行 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.12email-assitant.executor&quot;: &quot;Run&quot;,
+    &quot;Python.13-subgraph.executor&quot;: &quot;Run&quot;,
+    &quot;Python.13爬虫-1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.14_mapReduce.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.14csv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.15 爬虫--案例.executor&quot;: &quot;Run&quot;,
+    &quot;Python.15_.executor&quot;: &quot;Run&quot;,
+    &quot;Python.15_research_assistant (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.16_langgraph_store.executor&quot;: &quot;Run&quot;,
+    &quot;Python.16正则表达式.executor&quot;: &quot;Run&quot;,
+    &quot;Python.17_memoryschema_profile.executor&quot;: &quot;Run&quot;,
+    &quot;Python.18_memoryCollection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.19_long_team_memory.executor&quot;: &quot;Run&quot;,
+    &quot;Python.20demo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mcp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_mcp (1).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/work/cs/AI/AI Agent/07新闻头条---fastApi/crud&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "redis",
-      "mysql_aurora"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redis&quot;,
+      &quot;mysql_aurora&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\work\cs\AI\AI Agent\07新闻头条---fastApi\crud" />
@@ -145,8 +154,8 @@
       <recent name="D:\work\cs\AI\AI Agent\06.fastApi" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.08数据注释">
-    <configuration name="03字符串" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.15 爬虫--案例">
+    <configuration name="02列表" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI Agent" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,7 +171,7 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/001.Python学习/03字符串.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/001.Python学习/02列表.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,7 +180,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="05set" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="13爬虫-1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI Agent" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,7 +196,7 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/001.Python学习/05set.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/001.Python学习/13爬虫-1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,7 +205,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="06dict" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="14csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI Agent" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -212,7 +221,7 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/001.Python学习/06dict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/001.Python学习/14csv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,7 +230,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="07函数" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="15 爬虫--案例" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI Agent" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -237,7 +246,7 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/001.Python学习/07函数.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/001.Python学习/15 爬虫--案例.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,7 +255,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="08数据注释" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="16正则表达式" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI Agent" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,7 +271,7 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/001.Python学习/08数据注释.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/001.Python学习/16正则表达式.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -273,11 +282,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.08数据注释" />
-        <item itemvalue="Python.07函数" />
-        <item itemvalue="Python.06dict" />
-        <item itemvalue="Python.05set" />
-        <item itemvalue="Python.03字符串" />
+        <item itemvalue="Python.15 爬虫--案例" />
+        <item itemvalue="Python.16正则表达式" />
+        <item itemvalue="Python.02列表" />
+        <item itemvalue="Python.14csv" />
+        <item itemvalue="Python.13爬虫-1" />
       </list>
     </recent_temporary>
   </component>
@@ -322,7 +331,9 @@
       <workItem from="1781172312846" duration="57872000" />
       <workItem from="1782121964098" duration="224000" />
       <workItem from="1782122215151" duration="36000" />
-      <workItem from="1782122277287" duration="30268000" />
+      <workItem from="1782122277287" duration="71246000" />
+      <workItem from="1784008585788" duration="4110000" />
+      <workItem from="1784018055693" duration="22430000" />
     </task>
     <task id="LOCAL-00001" summary="历史记录，断点">
       <option name="closed" value="true" />
@@ -356,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781776645542</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat:python数据类型">
+      <option name="closed" value="true" />
+      <created>1783062043610</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783062043610</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,15 +397,12 @@
     <MESSAGE value="feat:fastApi" />
     <MESSAGE value="feat:langchain" />
     <MESSAGE value="feat:python基础" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:python基础" />
+    <MESSAGE value="feat:python数据类型" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:python数据类型" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/05.langgraph学习/11time_travel.py</url>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/venv/Lib/site-packages/fastapi/applications.py</url>
           <line>1377</line>
@@ -400,10 +416,13 @@
     <SUITE FILE_PATH="coverage/AI_Agent$04.coverage" NAME="04私人厨师 覆盖结果" MODIFIED="1781059866971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$16_langgraph_store.coverage" NAME="16_langgraph_store 覆盖结果" MODIFIED="1779261705898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$07.coverage" NAME="07函数 覆盖结果" MODIFIED="1782267605581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$09__1_.coverage" NAME="09类和对象 (1) 覆盖结果" MODIFIED="1783072534589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$05context.coverage" NAME="05context 覆盖结果" MODIFIED="1781142186026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$10.coverage" NAME="10魔法方法 覆盖结果" MODIFIED="1783067015150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$12_parallelization__1_.coverage" NAME="12-parallelization并行 (1) 覆盖结果" MODIFIED="1778316340189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$12email_assitant.coverage" NAME="12email-assitant 覆盖结果" MODIFIED="1781485986009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$01.coverage" NAME="01输入输出 覆盖结果" MODIFIED="1781662376596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$16.coverage" NAME="16正则表达式 覆盖结果" MODIFIED="1784020814840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$test_mcp__1_.coverage" NAME="test_mcp (1) 覆盖结果" MODIFIED="1781082492090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习/mcp" />
     <SUITE FILE_PATH="coverage/AI_Agent$10graph_robt.coverage" NAME="10graph_robt 覆盖结果" MODIFIED="1778053188168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习/studio" />
     <SUITE FILE_PATH="coverage/AI_Agent$main.coverage" NAME="main 覆盖结果" MODIFIED="1779680008804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06.fastApi/01_fastAPl" />
@@ -411,11 +430,15 @@
     <SUITE FILE_PATH="coverage/AI_Agent$17_memoryschema_profile.coverage" NAME="17_memoryschema_profile 覆盖结果" MODIFIED="1779353327566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$06json.coverage" NAME="06json转换 覆盖结果" MODIFIED="1780910378504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01.RAG学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$04graph_agent.coverage" NAME="04graph_agent 覆盖结果" MODIFIED="1778643102393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$14csv.coverage" NAME="14csv 覆盖结果" MODIFIED="1783675804108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$mcp.coverage" NAME="mcp 覆盖结果" MODIFIED="1781079257016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习/mcp" />
+    <SUITE FILE_PATH="coverage/AI_Agent$13_1.coverage" NAME="13爬虫-1 覆盖结果" MODIFIED="1783670562124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$01tool.coverage" NAME="01tool 覆盖结果" MODIFIED="1780973627713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$10dynamic_agent.coverage" NAME="10dynamic_agent 覆盖结果" MODIFIED="1781250266516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$09.coverage" NAME="09面向对象 覆盖结果" MODIFIED="1783064939396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$05set.coverage" NAME="05set 覆盖结果" MODIFIED="1781776603185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$06dict.coverage" NAME="06dict 覆盖结果" MODIFIED="1782197473865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$15___.coverage" NAME="15 爬虫--案例 覆盖结果" MODIFIED="1784023182353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$13_subgraph.coverage" NAME="13-subgraph 覆盖结果" MODIFIED="1778555064503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$06multi_agent.coverage" NAME="06multi-agent 覆盖结果" MODIFIED="1781143471590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$05MCP.coverage" NAME="05MCP 覆盖结果" MODIFIED="1781076391300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
@@ -433,7 +456,8 @@
     <SUITE FILE_PATH="coverage/AI_Agent$02Memory.coverage" NAME="02Memory 覆盖结果" MODIFIED="1780975907683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$09email_human_pop.coverage" NAME="09email-human-pop 覆盖结果" MODIFIED="1781235977558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$11dynamic_agent_change.coverage" NAME="11dynamic-agent-change 覆盖结果" MODIFIED="1781251437802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01langchain学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$11__.coverage" NAME="11类方法--案例 覆盖结果" MODIFIED="1783408780778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
     <SUITE FILE_PATH="coverage/AI_Agent$15_research_assistant__1_.coverage" NAME="15_research_assistant (1) 覆盖结果" MODIFIED="1778815066476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05.langgraph学习" />
-    <SUITE FILE_PATH="coverage/AI_Agent$02.coverage" NAME="02列表 覆盖结果" MODIFIED="1781774666936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
+    <SUITE FILE_PATH="coverage/AI_Agent$02.coverage" NAME="02列表 覆盖结果" MODIFIED="1783931858528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/001.Python学习" />
   </component>
 </project>
