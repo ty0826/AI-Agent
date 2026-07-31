@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="feat:目录调整--重新提交">
+    <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="feat:依赖更新">
+      <change beforePath="$PROJECT_DIR$/.idea/AI Agent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AI Agent.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01.Python/17jupyter使用.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/01.Python/17jupyter使用.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -132,7 +135,7 @@
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/work/cs/AI/AI Agent/07新闻头条---fastApi/crud&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/work/cs/AI/AI Agent/Source&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -151,9 +154,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\work\cs\AI\AI Agent\Source" />
       <recent name="F:\work\cs\AI\AI Agent\07新闻头条---fastApi\crud" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\work\cs\AI\AI Agent\04.LlamaIndex" />
       <recent name="F:\work\cs\AI\AI Agent\01langchain学习\05mcp" />
       <recent name="D:\work\cs\AI\AI Agent\07新闻头条---fastApi\utils" />
       <recent name="D:\work\cs\AI\AI Agent\06.fastApi" />
@@ -340,7 +345,10 @@
       <workItem from="1784008585788" duration="4110000" />
       <workItem from="1784018055693" duration="22430000" />
       <workItem from="1784277580056" duration="36493000" />
-      <workItem from="1785122379811" duration="934000" />
+      <workItem from="1785122379811" duration="14422000" />
+      <workItem from="1785208344978" duration="11524000" />
+      <workItem from="1785317463218" duration="16969000" />
+      <workItem from="1785461212794" duration="11229000" />
     </task>
     <task id="LOCAL-00001" summary="历史记录，断点">
       <option name="closed" value="true" />
@@ -414,7 +422,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785122600741</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat:依赖更新">
+      <option name="closed" value="true" />
+      <created>1785143398627</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1785143398627</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +457,8 @@
     <MESSAGE value="feat:python高级" />
     <MESSAGE value="feat:目录调整" />
     <MESSAGE value="feat:目录调整--重新提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:目录调整--重新提交" />
+    <MESSAGE value="feat:依赖更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:依赖更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

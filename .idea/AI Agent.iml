@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/04.Agent项目演练---智能客服系统" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/07新闻头条---fastApi" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/10.新闻头条---fastApi/venv/Lib/site-packages" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/10.新闻头条---fastApi" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/06.fastApi/.venv" />
