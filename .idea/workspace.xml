@@ -7,7 +7,6 @@
     <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="fix:LLamaindex更新">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/load_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/load_key.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +353,7 @@
       <workItem from="1786351765416" duration="156000" />
       <workItem from="1786351934941" duration="1251000" />
       <workItem from="1786353200887" duration="903000" />
-      <workItem from="1786354127135" duration="14940000" />
+      <workItem from="1786354127135" duration="15060000" />
     </task>
     <task id="LOCAL-00001" summary="历史记录，断点">
       <option name="closed" value="true" />
