@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="feat:llamaindex组件使用">
+    <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="fix:LLamaindex更新">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04.LlamaIndex/01.快速上手.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/04.LlamaIndex/01.快速上手.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04.LlamaIndex/07llamaindex的组件介绍--Querying查询组件.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/04.LlamaIndex/07llamaindex的组件介绍--Querying查询组件.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/load_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/load_key.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +140,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.inline&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -351,7 +350,11 @@
       <workItem from="1785317463218" duration="16969000" />
       <workItem from="1785461212794" duration="11229000" />
       <workItem from="1786068694193" duration="7750000" />
-      <workItem from="1786324750653" duration="3448000" />
+      <workItem from="1786324750653" duration="4436000" />
+      <workItem from="1786351765416" duration="156000" />
+      <workItem from="1786351934941" duration="1251000" />
+      <workItem from="1786353200887" duration="903000" />
+      <workItem from="1786354127135" duration="14940000" />
     </task>
     <task id="LOCAL-00001" summary="历史记录，断点">
       <option name="closed" value="true" />
@@ -433,11 +436,22 @@
       <option name="project" value="LOCAL" />
       <updated>1785143398627</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix:LLamaindex更新">
+      <option name="closed" value="true" />
+      <created>1786350785096</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1786350785096</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="SKILL.md" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -461,7 +475,8 @@
     <MESSAGE value="feat:目录调整" />
     <MESSAGE value="feat:目录调整--重新提交" />
     <MESSAGE value="feat:依赖更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:依赖更新" />
+    <MESSAGE value="fix:LLamaindex更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:LLamaindex更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
