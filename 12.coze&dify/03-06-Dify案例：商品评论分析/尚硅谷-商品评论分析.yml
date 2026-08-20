@@ -1,0 +1,607 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: advanced-chat
+  name: 尚硅谷-商品评论分析
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/deepseek:0.0.5@fd6efd37c2a931911de8ab9ca3ba2da303bef146d45ee87ad896b04b36d09403
+    version: null
+kind: app
+version: 0.4.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: llm
+      id: 1763022388431-source-1763022485100-target
+      selected: false
+      source: '1763022388431'
+      sourceHandle: source
+      target: '1763022485100'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: document-extractor
+        targetType: code
+      id: 1763022205648-source-1763024815162-target
+      selected: false
+      source: '1763022205648'
+      sourceHandle: source
+      target: '1763024815162'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: code
+      id: 1763024815162-source-1763022388431-target
+      selected: false
+      source: '1763024815162'
+      sourceHandle: source
+      target: '1763022388431'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: llm
+      id: 1763024815162-source-llm-target
+      selected: false
+      source: '1763024815162'
+      sourceHandle: source
+      target: llm
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: code
+      id: 1763022485100-source-1763027062089-target
+      selected: false
+      source: '1763022485100'
+      sourceHandle: source
+      target: '1763027062089'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: code
+      id: llm-source-1763027062089-target
+      selected: false
+      source: llm
+      sourceHandle: source
+      target: '1763027062089'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: start
+        targetType: document-extractor
+      id: 1763022168396-source-1763022205648-target
+      source: '1763022168396'
+      sourceHandle: source
+      target: '1763022205648'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: answer
+      id: 1763024815162-source-1763429698240-target
+      source: '1763024815162'
+      sourceHandle: source
+      target: '1763429698240'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: answer
+        targetType: code
+      id: 1763429698240-source-1763027062089-target
+      source: '1763429698240'
+      sourceHandle: source
+      target: '1763027062089'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: llm
+      id: 1763027062089-source-1763023524690-target
+      source: '1763027062089'
+      sourceHandle: source
+      target: '1763023524690'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 1763023524690-source-1763024014298-target
+      source: '1763023524690'
+      sourceHandle: source
+      target: '1763024014298'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        selected: false
+        title: 开始
+        type: start
+        variables:
+        - allowed_file_extensions: []
+          allowed_file_types:
+          - document
+          allowed_file_upload_methods:
+          - local_file
+          - remote_url
+          default: ''
+          hint: ''
+          label: input_file
+          max_length: 48
+          options: []
+          placeholder: ''
+          required: true
+          type: file
+          variable: input_file
+      height: 86
+      id: '1763022168396'
+      position:
+        x: 0
+        y: 12
+      positionAbsolute:
+        x: 0
+        y: 12
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: deepseek-chat
+          provider: langgenius/deepseek/deepseek
+        prompt_template:
+        - id: 943439df-9a54-4657-97be-9d89d452cf30
+          role: system
+          text: "# 角色\n你是一位专业的淘宝产品分析师，需要：\n1. 准确识别差评中的核心问题\n2. 分析问题的根本原因\n3. 提供可行的解决方案\n\
+            \n## 分析原则\n1. 客观分析\n- 基于事实数据\n- 避免主观臆测\n- 保持中立立场\n\n2. 系统分析\n- 多维度分析\n\
+            - 找出问题关联\n- 追溯根本原因\n\n3. 解决导向\n- 提供具体建议\n- 给出可行方案\n- 制定改进计划\n\n### 分析维度\n\
+            1. 产品问题\n   - 质量问题\n   - 功能问题\n   - 使用体验\n   - 包装问题\n\n2. 服务问题\n   - 物流配送\n\
+            \   - 客服响应\n   - 退换货处理\n   - 售后服务\n\n3. 价格问题\n   - 性价比\n   - 价格波动\n  \
+            \ - 促销问题\n   - 退款问题\n\n4. 描述问题\n   - 产品描述\n   - 图片展示\n   - 规格说明\n   -\
+            \ 使用说明\n\n\n## 技能\n1. 分析上下文中的负面评论，从产品本身的角度、店铺服务角度、物流角度、价格角度进行分点分析\n```\n\
+            示例：\n一、产品问题\n1.{具体的产品缺点1}\n2.{具体的产品缺点2}\n....\n二、服务问题\n1.{具体的店铺服务缺点1}\n\
+            2.{具体的店铺服务缺点2}\n....\n三、物流服务\n1.{具体的物流服务缺点1}\n2.{具体的物流服务缺点2}\n....\n四、价格问题\n\
+            1.{具体的价格缺点1}\n2.{具体的价格缺点2}\n....\n```\n2. 针对每一个节点都需要分点详细分析，let is step\
+            \ by step。\n3. 针对产品缺点的分析，总结相应的建议，let is step by step。\n4. 把分析结果翻译成中文。\n\
+            \n## 输出格式参考\n产品分析（analysis）\n一、产品本身\n1.{具体的产品缺点1}\n2.{具体的产品缺点2}\n....\n\
+            二、店铺服务\n1.{具体的店铺服务缺点1}\n2.{具体的店铺服务缺点2}\n....\n三、物流服务\n1.{具体的物流服务缺点1}\n\
+            2.{具体的物流服务缺点2}\n....\n四、价格\n1.{具体的价格缺点1}\n2.{具体的价格缺点2}\n\n选品改进建议（suggestion）\n\
+            1. 短期改进措施\n2. 中期优化方案\n3. 长期发展建议\n\n## 限制\n1. 以中文输出结果\n2. let is think\
+            \ step by step\n"
+        - id: d2c4f421-1a82-4b43-b8da-b8c6186b1844
+          role: user
+          text: '{{#1763022205648.text#}}'
+        selected: false
+        title: 分析和建议
+        type: llm
+        vision:
+          enabled: false
+      height: 86
+      id: llm
+      position:
+        x: 1384
+        y: 166
+      positionAbsolute:
+        x: 1384
+        y: 166
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        is_array_file: false
+        selected: false
+        title: 文档提取器
+        type: document-extractor
+        variable_selector:
+        - '1763022168396'
+        - input_file
+      height: 91
+      id: '1763022205648'
+      position:
+        x: 341
+        y: 9
+      positionAbsolute:
+        x: 341
+        y: 9
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        code: "\ndef main(text: str):\n    text_arr = text.split(r\"| rating |\")\n\
+          \    return {\n        \"meta_str\": text_arr[0],\n    }\n"
+        code_language: python3
+        outputs:
+          meta_str:
+            children: null
+            type: string
+        selected: false
+        title: 切分元数据
+        type: code
+        variables:
+        - value_selector:
+          - '1763022205648'
+          - text
+          value_type: string
+          variable: text
+      height: 50
+      id: '1763022388431'
+      position:
+        x: 1043
+        y: 18
+      positionAbsolute:
+        x: 1043
+        y: 18
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: deepseek-chat
+          provider: langgenius/deepseek/deepseek
+        prompt_template:
+        - id: 1e1f346c-c063-4b6f-9cc5-74eec8f4e6dd
+          role: system
+          text: '- 上下文{{#1763022388431.meta_str#}}
+
+            - 把上下文处理成Python字典类型'
+        selected: true
+        structured_output:
+          schema:
+            additionalProperties: false
+            properties:
+              asin:
+                type: string
+              image_url:
+                type: string
+              product_link:
+                type: string
+              product_title:
+                type: string
+              star_1:
+                type: string
+              star_2:
+                type: string
+              star_3:
+                type: string
+              sum_star:
+                type: string
+            required:
+            - product_title
+            - asin
+            - product_link
+            - image_url
+            - star_1
+            - star_2
+            - star_3
+            - sum_star
+            type: object
+        structured_output_enabled: true
+        title: 提取元数据
+        type: llm
+        vision:
+          enabled: false
+      height: 86
+      id: '1763022485100'
+      position:
+        x: 1384
+        y: 0
+      positionAbsolute:
+        x: 1384
+        y: 0
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: deepseek-chat
+          provider: langgenius/deepseek/deepseek
+        prompt_template:
+        - id: 81142da0-4abc-4203-8344-35914b93a8f2
+          role: system
+          text: '# 将用户给出的数据根据下面给出的提示词模板整理为目标格式输出
+
+            # 输出格式
+
+            以markdown格式输出
+
+            <参考格式>
+
+            # 一、 图片
+
+            # 二、 商品跳转链接
+
+            # 三、 负面评论总数量
+
+            - 3星评论数量
+
+            - 2星评论数量
+
+            - 1星评论数量
+
+            # 四、产品分析（analysis）
+
+            ## 4.1 产品本身
+
+            1. {具体的产品缺点1}
+
+            2. {具体的产品缺点2}
+
+            ....
+
+            ## 4.2 店铺服务
+
+            1.{具体的店铺服务缺点1}
+
+            2.{具体的店铺服务缺点2}
+
+            ....
+
+            ## 4.3 物流服务
+
+            1.{具体的物流服务缺点1}
+
+            2.{具体的物流服务缺点2}
+
+            ....
+
+            ## 4.4 价格
+
+            1.{具体的价格缺点1}
+
+            2.{具体的价格缺点2}
+
+
+            # 五、选品改进建议（suggestion）
+
+            1. 短期改进措施
+
+            2. 中期优化方案
+
+            3. 长期发展建议
+
+            </参考格式>'
+        - id: ee270e43-2db2-495c-b015-4a3548c2d62e
+          role: user
+          text: '{{#1763027062089.final_result#}}/'
+        selected: false
+        title: 整理输出
+        type: llm
+        vision:
+          enabled: false
+      height: 86
+      id: '1763023524690'
+      position:
+        x: 2086
+        y: 12
+      positionAbsolute:
+        x: 2086
+        y: 12
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        answer: '{{#1763023524690.text#}}'
+        selected: false
+        title: 输出最终结果
+        type: answer
+        variables: []
+      height: 101
+      id: '1763024014298'
+      position:
+        x: 2427
+        y: 4
+      positionAbsolute:
+        x: 2427
+        y: 4
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        code: "\ndef main(text_arr: list):\n    text = ''\n    if isinstance(text_arr,\
+          \ list):\n        text = text_arr[0]\n    else:\n        text = text_arr\n\
+          \    return {\n        \"text\": text\n    }\n"
+        code_language: python3
+        outputs:
+          text:
+            children: null
+            type: string
+        selected: false
+        title: 提取文本
+        type: code
+        variables:
+        - value_selector:
+          - '1763022205648'
+          - text
+          value_type: string
+          variable: text_arr
+      height: 50
+      id: '1763024815162'
+      position:
+        x: 682
+        y: 30
+      positionAbsolute:
+        x: 682
+        y: 30
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        code: "\ndef main(meta_data: dict, analysis_and_suggestion: str):\n    return\
+          \ {\n        \"final_result\": {\n            \"product_title\": meta_data['product_title'],\n\
+          \            \"asin\": meta_data['asin'],\n            \"product_link\"\
+          : meta_data['product_link'],\n            \"image_url\": meta_data['image_url'],\n\
+          \            \"star_1\": meta_data['star_1'],\n            \"star_2\": meta_data['star_2'],\n\
+          \            \"star_3\": meta_data['star_3'],\n            \"sum_star\"\
+          : meta_data['sum_star'],\n            \"analysis_and_suggestion\": analysis_and_suggestion\n\
+          \        }\n    }\n"
+        code_language: python3
+        outputs:
+          final_result:
+            children: null
+            type: object
+        selected: false
+        title: 汇总生成结果
+        type: code
+        variables:
+        - value_selector:
+          - '1763022485100'
+          - structured_output
+          value_type: object
+          variable: meta_data
+        - value_selector:
+          - llm
+          - text
+          value_type: string
+          variable: analysis_and_suggestion
+      height: 50
+      id: '1763027062089'
+      position:
+        x: 1745
+        y: 30
+      positionAbsolute:
+        x: 1745
+        y: 30
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        answer: '正在分析，请您耐心等待~
+
+          '
+        selected: false
+        title: 正在分析提示
+        type: answer
+        variables: []
+      height: 98
+      id: '1763429698240'
+      position:
+        x: 1043
+        y: 253
+      positionAbsolute:
+        x: 1043
+        y: 253
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    viewport:
+      x: -227.25000000000034
+      y: 249.8499999999999
+      zoom: 0.7
+  rag_pipeline_variables: []

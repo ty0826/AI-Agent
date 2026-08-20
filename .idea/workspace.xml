@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="fix:LLamaindex更新">
+    <list default="true" id="5e79a176-42fe-495f-9ad5-2a58230fcfe2" name="更改" comment="feat:coze&amp;&amp;dify">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.coze&amp;dify/03-07-Coze案例：商品营销卖点提炼/images/red_book_and_video_script.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.coze&amp;dify/03-07-Coze案例：商品营销卖点提炼/images/selling2buying_point.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.coze&amp;dify/03-07-Coze案例：商品营销卖点提炼/images/selling_point_generation-1763723057607-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.coze&amp;dify/03-07-Coze案例：商品营销卖点提炼/images/selling_point_generation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.coze&amp;dify/03-07-Coze案例：商品营销卖点提炼/images/set_product_name_and_desc-1763723039534-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.coze&amp;dify/03-07-Coze案例：商品营销卖点提炼/images/set_product_name_and_desc.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,91 +70,92 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python 测试.Python 测试 (test_response_interceptor.py 内).executor&quot;: &quot;Run&quot;,
-    &quot;Python.01tool.executor&quot;: &quot;Run&quot;,
-    &quot;Python.01输入输出.executor&quot;: &quot;Run&quot;,
-    &quot;Python.02Memory.executor&quot;: &quot;Run&quot;,
-    &quot;Python.02列表.executor&quot;: &quot;Run&quot;,
-    &quot;Python.03多模态.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.03字符串.executor&quot;: &quot;Run&quot;,
-    &quot;Python.04graph_agent.executor&quot;: &quot;Run&quot;,
-    &quot;Python.04tuple.executor&quot;: &quot;Run&quot;,
-    &quot;Python.04私人厨师.executor&quot;: &quot;Run&quot;,
-    &quot;Python.05MCP.executor&quot;: &quot;Run&quot;,
-    &quot;Python.05context.executor&quot;: &quot;Run&quot;,
-    &quot;Python.05set.executor&quot;: &quot;Run&quot;,
-    &quot;Python.06dict.executor&quot;: &quot;Run&quot;,
-    &quot;Python.06json转换.executor&quot;: &quot;Run&quot;,
-    &quot;Python.06multi-agent.executor&quot;: &quot;Run&quot;,
-    &quot;Python.07函数.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.07婚礼助手.executor&quot;: &quot;Run&quot;,
-    &quot;Python.08middleware.executor&quot;: &quot;Run&quot;,
-    &quot;Python.08数据注释.executor&quot;: &quot;Run&quot;,
-    &quot;Python.09email-human-pop.executor&quot;: &quot;Run&quot;,
-    &quot;Python.09类和对象 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.09面向对象.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10dynamic_agent.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10graph_robt (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.10graph_robt.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10魔法方法.executor&quot;: &quot;Run&quot;,
-    &quot;Python.11dynamic-agent-change.executor&quot;: &quot;Run&quot;,
-    &quot;Python.11time_travel.executor&quot;: &quot;Run&quot;,
-    &quot;Python.11类方法--案例.executor&quot;: &quot;Run&quot;,
-    &quot;Python.12-parallelization.executor&quot;: &quot;Run&quot;,
-    &quot;Python.12-parallelization并行 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.12email-assitant.executor&quot;: &quot;Run&quot;,
-    &quot;Python.13-subgraph.executor&quot;: &quot;Run&quot;,
-    &quot;Python.13爬虫-1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.14_mapReduce.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.14csv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.15 爬虫--案例.executor&quot;: &quot;Run&quot;,
-    &quot;Python.15_.executor&quot;: &quot;Run&quot;,
-    &quot;Python.15_research_assistant (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.16_langgraph_store.executor&quot;: &quot;Run&quot;,
-    &quot;Python.16正则表达式.executor&quot;: &quot;Run&quot;,
-    &quot;Python.17_memoryschema_profile.executor&quot;: &quot;Run&quot;,
-    &quot;Python.18_memoryCollection.executor&quot;: &quot;Run&quot;,
-    &quot;Python.18面向对象高级--封装.executor&quot;: &quot;Run&quot;,
-    &quot;Python.19_long_team_memory.executor&quot;: &quot;Run&quot;,
-    &quot;Python.19面向对象高级--继承.executor&quot;: &quot;Run&quot;,
-    &quot;Python.20demo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.20面向对象---多继承.executor&quot;: &quot;Run&quot;,
-    &quot;Python.21面向对象---多态.executor&quot;: &quot;Run&quot;,
-    &quot;Python.22面相对象---多态（鸭子类型）.executor&quot;: &quot;Run&quot;,
-    &quot;Python.23面向对象--案例.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mcp.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_mcp (1).executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/work/cs/AI/AI Agent/04.LlamaIndex/Docx&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.inline&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python 测试.Python 测试 (test_response_interceptor.py 内).executor": "Run",
+    "Python.01tool.executor": "Run",
+    "Python.01输入输出.executor": "Run",
+    "Python.02Memory.executor": "Run",
+    "Python.02列表.executor": "Run",
+    "Python.03多模态.executor": "Debug",
+    "Python.03字符串.executor": "Run",
+    "Python.04graph_agent.executor": "Run",
+    "Python.04tuple.executor": "Run",
+    "Python.04私人厨师.executor": "Run",
+    "Python.05MCP.executor": "Run",
+    "Python.05context.executor": "Run",
+    "Python.05set.executor": "Run",
+    "Python.06dict.executor": "Run",
+    "Python.06json转换.executor": "Run",
+    "Python.06multi-agent.executor": "Run",
+    "Python.07函数.executor": "Debug",
+    "Python.07婚礼助手.executor": "Run",
+    "Python.08middleware.executor": "Run",
+    "Python.08数据注释.executor": "Run",
+    "Python.09email-human-pop.executor": "Run",
+    "Python.09类和对象 (1).executor": "Run",
+    "Python.09面向对象.executor": "Run",
+    "Python.10dynamic_agent.executor": "Run",
+    "Python.10graph_robt (1).executor": "Run",
+    "Python.10graph_robt.executor": "Run",
+    "Python.10魔法方法.executor": "Run",
+    "Python.11dynamic-agent-change.executor": "Run",
+    "Python.11time_travel.executor": "Run",
+    "Python.11类方法--案例.executor": "Run",
+    "Python.12-parallelization.executor": "Run",
+    "Python.12-parallelization并行 (1).executor": "Run",
+    "Python.12email-assitant.executor": "Run",
+    "Python.13-subgraph.executor": "Run",
+    "Python.13爬虫-1.executor": "Run",
+    "Python.14_mapReduce.executor": "Debug",
+    "Python.14csv.executor": "Run",
+    "Python.15 爬虫--案例.executor": "Run",
+    "Python.15_.executor": "Run",
+    "Python.15_research_assistant (1).executor": "Run",
+    "Python.16_langgraph_store.executor": "Run",
+    "Python.16正则表达式.executor": "Run",
+    "Python.17_memoryschema_profile.executor": "Run",
+    "Python.18_memoryCollection.executor": "Run",
+    "Python.18面向对象高级--封装.executor": "Run",
+    "Python.19_long_team_memory.executor": "Run",
+    "Python.19面向对象高级--继承.executor": "Run",
+    "Python.20demo.executor": "Run",
+    "Python.20面向对象---多继承.executor": "Run",
+    "Python.21面向对象---多态.executor": "Run",
+    "Python.22面相对象---多态（鸭子类型）.executor": "Run",
+    "Python.23面向对象--案例.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.mcp.executor": "Run",
+    "Python.test_mcp (1).executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "F:/work/cs/AI/AI Agent/04.LlamaIndex/Docx",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.completion.inline",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;redis&quot;,
-      &quot;mysql_aurora&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis",
+      "mysql_aurora"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\work\cs\AI\AI Agent\04.LlamaIndex\Docx" />
@@ -354,6 +360,7 @@
       <workItem from="1786351934941" duration="1251000" />
       <workItem from="1786353200887" duration="903000" />
       <workItem from="1786354127135" duration="15060000" />
+      <workItem from="1786695348215" duration="6988000" />
     </task>
     <task id="LOCAL-00001" summary="历史记录，断点">
       <option name="closed" value="true" />
@@ -443,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786350785096</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat:coze&amp;&amp;dify">
+      <option name="closed" value="true" />
+      <created>1787194254029</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1787194254029</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +490,9 @@
     <MESSAGE value="feat:目录调整--重新提交" />
     <MESSAGE value="feat:依赖更新" />
     <MESSAGE value="fix:LLamaindex更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:LLamaindex更新" />
+    <MESSAGE value="fix:coze&amp;&amp;dify" />
+    <MESSAGE value="feat:coze&amp;&amp;dify" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:coze&amp;&amp;dify" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

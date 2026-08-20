@@ -1,0 +1,2285 @@
+app:
+  description: 投诉内容逗号隔开，或者自定义规则函数
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: 旅游专列-客服投诉-并行-飞书
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/feishu:0.0.1@9b23029c7b3440b8f4d6092e631355dd06ffdfa5595931363821dd0b88666a43
+    version: null
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/siliconflow:0.0.45@c3b4e788bdac202445fe0a1d82ff81fbc0f24f7ef3aaeef4785908d1d972fa84
+    version: null
+kind: app
+version: 0.6.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        attachment_image_file_size_limit: 2
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        file_upload_limit: 50
+        image_file_batch_limit: 10
+        image_file_size_limit: 10
+        single_chunk_attachment_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInLoop: false
+        sourceType: start
+        targetType: code
+      id: 1773708471338-source-1773711975644-target
+      selected: false
+      source: '1773708471338'
+      sourceHandle: source
+      target: '1773711975644'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: iteration
+      id: 1773711975644-source-1773712547548-target
+      selected: false
+      source: '1773711975644'
+      sourceHandle: source
+      target: '1773712547548'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: iteration-start
+        targetType: question-classifier
+      id: 1773712547548start-source-1773712797317-target
+      selected: false
+      source: 1773712547548start
+      sourceHandle: source
+      target: '1773712797317'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInLoop: false
+        sourceType: iteration
+        targetType: end
+      id: 1773712547548-source-1773712943909-target
+      selected: false
+      source: '1773712547548'
+      sourceHandle: source
+      target: '1773712943909'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713257820-1-1773713516733-target
+      selected: false
+      source: '1773713257820'
+      sourceHandle: '1'
+      target: '1773713516733'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713257820-2-1773713516733-target
+      selected: false
+      source: '1773713257820'
+      sourceHandle: '2'
+      target: '1773713516733'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713257820-1773713331388-1773713516733-target
+      selected: false
+      source: '1773713257820'
+      sourceHandle: '1773713331388'
+      target: '1773713516733'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713257820-1773713341036-1773713516733-target
+      selected: false
+      source: '1773713257820'
+      sourceHandle: '1773713341036'
+      target: '1773713516733'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713257820-1773713409180-1773713516733-target
+      selected: false
+      source: '1773713257820'
+      sourceHandle: '1773713409180'
+      target: '1773713516733'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713257820-1773713418230-1773713516733-target
+      selected: false
+      source: '1773713257820'
+      sourceHandle: '1773713418230'
+      target: '1773713516733'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713257820-1773713426068-1773713516733-target
+      selected: false
+      source: '1773713257820'
+      sourceHandle: '1773713426068'
+      target: '1773713516733'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: llm
+        targetType: tool
+      id: 1773713516733-source-1773713694598-target
+      selected: false
+      source: '1773713516733'
+      sourceHandle: source
+      target: '1773713694598'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713801236-1-1773713940773-target
+      selected: false
+      source: '1773713801236'
+      sourceHandle: '1'
+      target: '1773713940773'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713801236-2-1773713940773-target
+      selected: false
+      source: '1773713801236'
+      sourceHandle: '2'
+      target: '1773713940773'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713801236-1773713872805-1773713940773-target
+      selected: false
+      source: '1773713801236'
+      sourceHandle: '1773713872805'
+      target: '1773713940773'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713801236-1773713887636-1773713940773-target
+      selected: false
+      source: '1773713801236'
+      sourceHandle: '1773713887636'
+      target: '1773713940773'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713801236-1773713897356-1773713940773-target
+      selected: false
+      source: '1773713801236'
+      sourceHandle: '1773713897356'
+      target: '1773713940773'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713801236-1773713907188-1773713940773-target
+      selected: false
+      source: '1773713801236'
+      sourceHandle: '1773713907188'
+      target: '1773713940773'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713801236-1773713916053-1773713940773-target
+      selected: false
+      source: '1773713801236'
+      sourceHandle: '1773713916053'
+      target: '1773713940773'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773713801236-1773713924613-1773713940773-target
+      selected: false
+      source: '1773713801236'
+      sourceHandle: '1773713924613'
+      target: '1773713940773'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: llm
+        targetType: tool
+      id: 1773713940773-source-1773714033590-target
+      selected: false
+      source: '1773713940773'
+      sourceHandle: source
+      target: '1773714033590'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: question-classifier
+      id: 1773712797317-2-1773713801236-target
+      selected: false
+      source: '1773712797317'
+      sourceHandle: '2'
+      target: '1773713801236'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: question-classifier
+      id: 1773712797317-1-1773713257820-target
+      selected: false
+      source: '1773712797317'
+      sourceHandle: '1'
+      target: '1773713257820'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: question-classifier
+      id: 1773712797317-1773746376243-1773746422850-target
+      selected: false
+      source: '1773712797317'
+      sourceHandle: '1773746376243'
+      target: '1773746422850'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: question-classifier
+      id: 1773712797317-1773746384227-1773746560691-target
+      selected: false
+      source: '1773712797317'
+      sourceHandle: '1773746384227'
+      target: '1773746560691'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: question-classifier
+      id: 1773712797317-1773746390619-1773746648618-target
+      selected: false
+      source: '1773712797317'
+      sourceHandle: '1773746390619'
+      target: '1773746648618'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: question-classifier
+      id: 1773712797317-1773746399698-1773746707290-target
+      selected: false
+      source: '1773712797317'
+      sourceHandle: '1773746399698'
+      target: '1773746707290'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746422850-1-1773746755956-target
+      selected: false
+      source: '1773746422850'
+      sourceHandle: '1'
+      target: '1773746755956'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746422850-2-1773746755956-target
+      selected: false
+      source: '1773746422850'
+      sourceHandle: '2'
+      target: '1773746755956'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746422850-1773746542203-1773746755956-target
+      selected: false
+      source: '1773746422850'
+      sourceHandle: '1773746542203'
+      target: '1773746755956'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746422850-1773746548002-1773746755956-target
+      selected: false
+      source: '1773746422850'
+      sourceHandle: '1773746548002'
+      target: '1773746755956'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746422850-1773746552746-1773746755956-target
+      selected: false
+      source: '1773746422850'
+      sourceHandle: '1773746552746'
+      target: '1773746755956'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746560691-1-1773746840628-target
+      selected: false
+      source: '1773746560691'
+      sourceHandle: '1'
+      target: '1773746840628'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746560691-2-1773746840628-target
+      selected: false
+      source: '1773746560691'
+      sourceHandle: '2'
+      target: '1773746840628'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746560691-1773746615548-1773746840628-target
+      selected: false
+      source: '1773746560691'
+      sourceHandle: '1773746615548'
+      target: '1773746840628'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746560691-1773746622490-1773746840628-target
+      selected: false
+      source: '1773746560691'
+      sourceHandle: '1773746622490'
+      target: '1773746840628'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746648618-1-1773746967188-target
+      selected: false
+      source: '1773746648618'
+      sourceHandle: '1'
+      target: '1773746967188'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746648618-2-1773746967188-target
+      selected: false
+      source: '1773746648618'
+      sourceHandle: '2'
+      target: '1773746967188'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746648618-1773746692658-1773746967188-target
+      selected: false
+      source: '1773746648618'
+      sourceHandle: '1773746692658'
+      target: '1773746967188'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746648618-1773746697075-1773746967188-target
+      selected: false
+      source: '1773746648618'
+      sourceHandle: '1773746697075'
+      target: '1773746967188'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746707290-1-1773747162933-target
+      selected: false
+      source: '1773746707290'
+      sourceHandle: '1'
+      target: '1773747162933'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746707290-2-1773747162933-target
+      selected: false
+      source: '1773746707290'
+      sourceHandle: '2'
+      target: '1773747162933'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746707290-1773746728114-1773747162933-target
+      selected: false
+      source: '1773746707290'
+      sourceHandle: '1773746728114'
+      target: '1773747162933'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746707290-1773746744002-1773747162933-target
+      selected: false
+      source: '1773746707290'
+      sourceHandle: '1773746744002'
+      target: '1773747162933'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: question-classifier
+        targetType: llm
+      id: 1773746707290-1773746745196-1773747162933-target
+      selected: false
+      source: '1773746707290'
+      sourceHandle: '1773746745196'
+      target: '1773747162933'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: llm
+        targetType: tool
+      id: 1773746755956-source-1773747302218-target
+      selected: false
+      source: '1773746755956'
+      sourceHandle: source
+      target: '1773747302218'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: llm
+        targetType: tool
+      id: 1773746840628-source-1773747399411-target
+      selected: false
+      source: '1773746840628'
+      sourceHandle: source
+      target: '1773747399411'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: llm
+        targetType: tool
+      id: 1773746967188-source-1773747505243-target
+      selected: false
+      source: '1773746967188'
+      sourceHandle: source
+      target: '1773747505243'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        sourceType: llm
+        targetType: tool
+      id: 1773747162933-source-1773747617330-target
+      source: '1773747162933'
+      sourceHandle: source
+      target: '1773747617330'
+      targetHandle: target
+      type: custom
+      zIndex: 1002
+    nodes:
+    - data:
+        selected: false
+        title: 用户输入
+        type: start
+        variables:
+        - default: ''
+          hint: ''
+          label: 投诉内容逗号隔开
+          options: []
+          placeholder: ''
+          required: true
+          type: text-input
+          variable: input
+        - default: ''
+          hint: ''
+          label: 客户
+          options: []
+          placeholder: ''
+          required: true
+          type: text-input
+          variable: name
+        - default: ''
+          hint: ''
+          label: 产品
+          options: []
+          placeholder: ''
+          required: true
+          type: text-input
+          variable: product
+      height: 159
+      id: '1773708471338'
+      position:
+        x: 0
+        y: 1066
+      positionAbsolute:
+        x: 0
+        y: 1066
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import re\n\ndef main(input_text: str):\n    cleaned = input_text.replace(\"\
+          '\", \"\")\n\n    items = [x.strip() for x in re.split(r\"[，,]\", cleaned)\
+          \ if x.strip()]\n\n    return {\n        \"result\": items   \n    }"
+        code_language: python3
+        outputs:
+          result:
+            children: null
+            type: array[string]
+        selected: true
+        title: 自定义规则函数
+        type: code
+        variables:
+        - value_selector:
+          - '1773708471338'
+          - input
+          value_type: string
+          variable: input_text
+      height: 51
+      id: '1773711975644'
+      position:
+        x: 342
+        y: 1120
+      positionAbsolute:
+        x: 342
+        y: 1120
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        error_handle_mode: continue-on-error
+        flatten_output: true
+        height: 2291
+        is_parallel: true
+        iterator_input_type: array[string]
+        iterator_selector:
+        - '1773711975644'
+        - result
+        output_selector:
+        - '1773712797317'
+        - class_name
+        output_type: array[string]
+        parallel_nums: 10
+        selected: false
+        start_node_id: 1773712547548start
+        title: 多输入迭代
+        type: iteration
+        width: 1849
+      height: 2291
+      id: '1773712547548'
+      position:
+        x: 683
+        y: 0
+      positionAbsolute:
+        x: 683
+        y: 0
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 1849
+      zIndex: 1
+    - data:
+        desc: ''
+        isInIteration: true
+        selected: false
+        title: ''
+        type: iteration-start
+      draggable: false
+      height: 48
+      id: 1773712547548start
+      parentId: '1773712547548'
+      position:
+        x: 60
+        y: 827
+      positionAbsolute:
+        x: 743
+        y: 827
+      selectable: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom-iteration-start
+      width: 44
+      zIndex: 1002
+    - data:
+        classes:
+        - id: '1'
+          name: 产品宣传问题
+        - id: '2'
+          name: 吃住体验问题
+        - id: '1773746376243'
+          name: 专列与整体保障问题
+        - id: '1773746384227'
+          name: 服务人员问题
+        - id: '1773746390619'
+          name: 行程安排问题
+        - id: '1773746399698'
+          name: 价格收费问题
+        instructions: ''
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/MiniMaxAI/MiniMax-M2.5
+          provider: langgenius/siliconflow/siliconflow
+        query_variable_selector:
+        - '1773712547548'
+        - item
+        selected: false
+        title: 问题分类器
+        type: question-classifier
+        vision:
+          enabled: false
+      height: 320
+      id: '1773712797317'
+      parentId: '1773712547548'
+      position:
+        x: 184
+        y: 691
+      positionAbsolute:
+        x: 867
+        y: 691
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        outputs:
+        - value_selector:
+          - '1773712547548'
+          - output
+          value_type: array[string]
+          variable: output
+        selected: false
+        title: 输出
+        type: end
+      height: 87
+      id: '1773712943909'
+      position:
+        x: 2632
+        y: 1102
+      positionAbsolute:
+        x: 2632
+        y: 1102
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        classes:
+        - id: '1'
+          name: 宣传与实际不符
+        - id: '2'
+          name: 承诺未兑现
+        - id: '1773713331388'
+          name: 行程宣传不实
+        - id: '1773713341036'
+          name: 专列条件宣传不实
+        - id: '1773713409180'
+          name: 住宿餐饮宣传不实
+        - id: '1773713418230'
+          name: 纯玩/购物宣传不实
+        - id: '1773713426068'
+          name: 图片文案夸大
+        instructions: ''
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/MiniMaxAI/MiniMax-M2.5
+          provider: langgenius/siliconflow/siliconflow
+        query_variable_selector:
+        - '1773712797317'
+        - class_name
+        selected: false
+        title: 产品投诉二级分类器
+        type: question-classifier
+        vision:
+          enabled: false
+      height: 358
+      id: '1773713257820'
+      parentId: '1773712547548'
+      position:
+        x: 525
+        y: 1808
+      positionAbsolute:
+        x: 1208
+        y: 1808
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/MiniMaxAI/MiniMax-M2.5
+          provider: langgenius/siliconflow/siliconflow
+        prompt_template:
+        - id: 4498e755-7c8c-484a-b760-46379b50976e
+          role: system
+          text: '你是一个旅游客户投诉总结助手。
+
+
+            请根据输入信息，对客户问题进行整理总结。
+
+
+            要求：
+
+            1. 保留一级分类和二级分类
+
+            2. 用户反馈需要在原始问题基础上进行适度扩展，使表达更完整
+
+            3. 扩展内容必须保持用户原意，不要编造新的事实
+
+            4. 表达简洁、清晰、适合客服工单记录
+
+
+            输入信息：
+
+            一级分类：{{#1773712797317.class_name#}}
+
+            二级分类：{{#1773713257820.class_name#}}
+
+            用户问题：{{#1773708471338.input#}}
+
+
+            输出格式：
+
+
+            问题总结：
+
+            一级分类：...
+
+            二级分类：...
+
+            用户反馈：...'
+        reasoning_format: separated
+        selected: false
+        title: 产品投诉汇总
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1773713516733'
+      parentId: '1773712547548'
+      position:
+        x: 866
+        y: 1943
+      positionAbsolute:
+        x: 1549
+        y: 1943
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        is_team_authorization: true
+        iteration_id: '1773712547548'
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: Feishu Group bot webhook key
+            ja_JP: Feishu Group bot webhook key
+            pt_BR: Feishu Group bot webhook key
+            zh_Hans: 群机器人webhook的key
+          label:
+            en_US: Feishu Group bot webhook key
+            ja_JP: Feishu Group bot webhook key
+            pt_BR: Feishu Group bot webhook key
+            zh_Hans: 群机器人webhook的key
+          llm_description: ''
+          max: null
+          min: null
+          name: hook_key
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Content to sent to the group.
+            ja_JP: Content to sent to the group.
+            pt_BR: Content to sent to the group.
+            zh_Hans: 群消息文本
+          label:
+            en_US: content
+            ja_JP: content
+            pt_BR: content
+            zh_Hans: 消息内容
+          llm_description: Content of the message
+          max: null
+          min: null
+          name: content
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          content: ''
+          hook_key: ''
+        plugin_id: langgenius/feishu
+        plugin_unique_identifier: langgenius/feishu:0.0.1@9b23029c7b3440b8f4d6092e631355dd06ffdfa5595931363821dd0b88666a43
+        provider_icon: https://cloud.dify.ai/console/api/workspaces/current/plugin/icon?tenant_id=5555a037-b3ea-44a6-bdc3-f8a9aa8154a9&filename=9aebd67dfcbc3c56f83d8b697538738964705ed2c796e0cb9dc10e0dd2891a43.svg
+        provider_id: langgenius/feishu/feishu
+        provider_name: langgenius/feishu/feishu
+        provider_type: builtin
+        selected: false
+        title: 售前团队
+        tool_configurations:
+          hook_key:
+            type: mixed
+            value: 5689a373-fb84-4a71-8a02-06ec1015376b
+        tool_description: 通过飞书的群机器人webhook发送群消息
+        tool_label: 发送群消息
+        tool_name: feishu_group_bot
+        tool_node_version: '2'
+        tool_parameters:
+          content:
+            type: mixed
+            value: '售前团队注意：
+
+              客户：{{#1773708471338.name#}}
+
+              在行程专列：{{#1773708471338.product#}}
+
+              {{#1773713516733.text#}}'
+        type: tool
+      height: 87
+      id: '1773713694598'
+      parentId: '1773712547548'
+      position:
+        x: 1187
+        y: 1943
+      positionAbsolute:
+        x: 1870
+        y: 1943
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        classes:
+        - id: '1'
+          name: 餐食质量差
+        - id: '2'
+          name: 餐饮卫生问题
+        - id: '1773713872805'
+          name: 餐标不符
+        - id: '1773713887636'
+          name: 用餐安排不合理
+        - id: '1773713897356'
+          name: 酒店标准不达标
+        - id: '1773713907188'
+          name: 房间卫生差
+        - id: '1773713916053'
+          name: 房型安排不符
+        - id: '1773713924613'
+          name: 酒店设施问题
+        instructions: ''
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/MiniMaxAI/MiniMax-M2.5
+          provider: langgenius/siliconflow/siliconflow
+        query_variable_selector:
+        - '1773712797317'
+        - class_name
+        selected: false
+        title: 吃住问题二级分类器
+        type: question-classifier
+        vision:
+          enabled: false
+      height: 396
+      id: '1773713801236'
+      parentId: '1773712547548'
+      position:
+        x: 525
+        y: 1352
+      positionAbsolute:
+        x: 1208
+        y: 1352
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/moonshotai/Kimi-K2.5
+          provider: langgenius/siliconflow/siliconflow
+        prompt_template:
+        - id: 819643f7-c1fe-4018-85ec-54d908a915ae
+          role: system
+          text: '你是一个旅游客户投诉总结助手。
+
+
+            请根据输入信息，对客户问题进行整理总结。
+
+
+            要求：
+
+            1. 保留一级分类和二级分类
+
+            2. 用户反馈需要在原始问题基础上进行适度扩展，使表达更完整
+
+            3. 扩展内容必须保持用户原意，不要编造新的事实
+
+            4. 表达简洁、清晰、适合客服工单记录
+
+
+            输入信息：
+
+            一级分类：{{#1773712797317.class_name#}}
+
+            二级分类：{{#1773713801236.class_name#}}
+
+            用户问题：{{#1773708471338.input#}}
+
+
+            输出格式：
+
+
+            问题总结：
+
+            一级分类：...
+
+            二级分类：...
+
+            用户反馈：...'
+        reasoning_format: separated
+        selected: false
+        title: 吃住问题汇总
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1773713940773'
+      parentId: '1773712547548'
+      position:
+        x: 866
+        y: 1489
+      positionAbsolute:
+        x: 1549
+        y: 1489
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        is_team_authorization: true
+        iteration_id: '1773712547548'
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: Feishu Group bot webhook key
+            ja_JP: Feishu Group bot webhook key
+            pt_BR: Feishu Group bot webhook key
+            zh_Hans: 群机器人webhook的key
+          label:
+            en_US: Feishu Group bot webhook key
+            ja_JP: Feishu Group bot webhook key
+            pt_BR: Feishu Group bot webhook key
+            zh_Hans: 群机器人webhook的key
+          llm_description: ''
+          max: null
+          min: null
+          name: hook_key
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Content to sent to the group.
+            ja_JP: Content to sent to the group.
+            pt_BR: Content to sent to the group.
+            zh_Hans: 群消息文本
+          label:
+            en_US: content
+            ja_JP: content
+            pt_BR: content
+            zh_Hans: 消息内容
+          llm_description: Content of the message
+          max: null
+          min: null
+          name: content
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          content: ''
+          hook_key: ''
+        plugin_id: langgenius/feishu
+        plugin_unique_identifier: langgenius/feishu:0.0.1@9b23029c7b3440b8f4d6092e631355dd06ffdfa5595931363821dd0b88666a43
+        provider_icon: https://cloud.dify.ai/console/api/workspaces/current/plugin/icon?tenant_id=5555a037-b3ea-44a6-bdc3-f8a9aa8154a9&filename=9aebd67dfcbc3c56f83d8b697538738964705ed2c796e0cb9dc10e0dd2891a43.svg
+        provider_id: langgenius/feishu/feishu
+        provider_name: langgenius/feishu/feishu
+        provider_type: builtin
+        selected: false
+        title: 售后团队
+        tool_configurations:
+          hook_key:
+            type: mixed
+            value: 5689a373-fb84-4a71-8a02-06ec1015376b
+        tool_description: 通过飞书的群机器人webhook发送群消息
+        tool_label: 发送群消息
+        tool_name: feishu_group_bot
+        tool_node_version: '2'
+        tool_parameters:
+          content:
+            type: mixed
+            value: '售后团队注意：
+
+              客户：{{#1773708471338.name#}}
+
+              在行程专列：{{#1773708471338.product#}}
+
+              {{#1773713940773.text#}}'
+        type: tool
+      height: 87
+      id: '1773714033590'
+      parentId: '1773712547548'
+      position:
+        x: 1187
+        y: 1489
+      positionAbsolute:
+        x: 1870
+        y: 1489
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        classes:
+        - id: '1'
+          name: 车厢环境问题
+        - id: '2'
+          name: 空调供水供电问题
+        - id: '1773746542203'
+          name: 列车卫生问题
+        - id: '1773746548002'
+          name: 接驳与行李问题
+        - id: '1773746552746'
+          name: 突发情况处理不及时
+        instructions: ''
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/MiniMaxAI/MiniMax-M2.5
+          provider: langgenius/siliconflow/siliconflow
+        query_variable_selector:
+        - '1773712797317'
+        - class_name
+        selected: false
+        title: 专列问题二级分类器
+        type: question-classifier
+        vision:
+          enabled: false
+      height: 282
+      id: '1773746422850'
+      parentId: '1773712547548'
+      position:
+        x: 525
+        y: 60
+      positionAbsolute:
+        x: 1208
+        y: 60
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        classes:
+        - id: '1'
+          name: 导游态度差/导游不专业
+        - id: '2'
+          name: 服务响应慢
+        - id: '1773746615548'
+          name: 服务响应慢
+        - id: '1773746622490'
+          name: 投诉处理敷衍
+        instructions: ''
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/MiniMaxAI/MiniMax-M2.5
+          provider: langgenius/siliconflow/siliconflow
+        query_variable_selector:
+        - '1773712797317'
+        - class_name
+        selected: false
+        title: 服务问题二级分类器
+        type: question-classifier
+        vision:
+          enabled: false
+      height: 244
+      id: '1773746560691'
+      parentId: '1773712547548'
+      position:
+        x: 525
+        y: 402
+      positionAbsolute:
+        x: 1208
+        y: 402
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        classes:
+        - id: '1'
+          name: 行程变更
+        - id: '2'
+          name: 行程变更
+        - id: '1773746692658'
+          name: 时间安排不合理
+        - id: '1773746697075'
+          name: 时间安排不合理
+        instructions: ''
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/MiniMaxAI/MiniMax-M2.5
+          provider: langgenius/siliconflow/siliconflow
+        query_variable_selector:
+        - '1773712797317'
+        - class_name
+        selected: false
+        title: 行程问题二级分类器
+        type: question-classifier
+        vision:
+          enabled: false
+      height: 244
+      id: '1773746648618'
+      parentId: '1773712547548'
+      position:
+        x: 525
+        y: 706
+      positionAbsolute:
+        x: 1208
+        y: 706
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        classes:
+        - id: '1'
+          name: 报价不透明
+        - id: '2'
+          name: 退款退费问题
+        - id: '1773746728114'
+          name: 退款退费问题
+        - id: '1773746744002'
+          name: 费用解释不清
+        - id: '1773746745196'
+          name: 费用解释不清
+        instructions: ''
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/MiniMaxAI/MiniMax-M2.5
+          provider: langgenius/siliconflow/siliconflow
+        query_variable_selector:
+        - '1773712797317'
+        - class_name
+        selected: false
+        title: 收费问题二级分类器
+        type: question-classifier
+        vision:
+          enabled: false
+      height: 282
+      id: '1773746707290'
+      parentId: '1773712547548'
+      position:
+        x: 525
+        y: 1010
+      positionAbsolute:
+        x: 1208
+        y: 1010
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/MiniMaxAI/MiniMax-M2.5
+          provider: langgenius/siliconflow/siliconflow
+        prompt_template:
+        - id: a4fb8954-7e58-4595-b486-a1e51c87a7aa
+          role: system
+          text: '你是一个旅游客户投诉总结助手。
+
+
+            请根据输入信息，对客户问题进行整理总结。
+
+
+            要求：
+
+            1. 保留一级分类和二级分类
+
+            2. 用户反馈需要在原始问题基础上进行适度扩展，使表达更完整
+
+            3. 扩展内容必须保持用户原意，不要编造新的事实
+
+            4. 表达简洁、清晰、适合客服工单记录
+
+
+            输入信息：
+
+            一级分类：{{#1773712797317.class_name#}}
+
+            二级分类：{{#1773746422850.class_name#}}
+
+            用户问题：{{#1773708471338.input#}}
+
+
+            输出格式：
+
+
+            问题总结：
+
+            一级分类：...
+
+            二级分类：...
+
+            用户反馈：...'
+        reasoning_format: separated
+        selected: false
+        title: 专列问题汇总
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1773746755956'
+      parentId: '1773712547548'
+      position:
+        x: 866
+        y: 157
+      positionAbsolute:
+        x: 1549
+        y: 157
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/MiniMaxAI/MiniMax-M2.5
+          provider: langgenius/siliconflow/siliconflow
+        prompt_template:
+        - id: 449b6205-2d72-4439-afd0-4a1a6772e044
+          role: system
+          text: '你是一个旅游客户投诉总结助手。
+
+
+            请根据输入信息，对客户问题进行整理总结。
+
+
+            要求：
+
+            1. 保留一级分类和二级分类
+
+            2. 用户反馈需要在原始问题基础上进行适度扩展，使表达更完整
+
+            3. 扩展内容必须保持用户原意，不要编造新的事实
+
+            4. 表达简洁、清晰、适合客服工单记录
+
+
+            输入信息：
+
+            一级分类：{{#1773712797317.class_name#}}
+
+            二级分类：{{#1773746560691.class_name#}}
+
+            用户问题：{{#1773708471338.input#}}
+
+
+            输出格式：
+
+
+            问题总结：
+
+            一级分类：...
+
+            二级分类：...
+
+            用户反馈：...'
+        reasoning_format: separated
+        selected: false
+        title: 服务问题汇总
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1773746840628'
+      parentId: '1773712547548'
+      position:
+        x: 866
+        y: 465
+      positionAbsolute:
+        x: 1549
+        y: 465
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/MiniMaxAI/MiniMax-M2.5
+          provider: langgenius/siliconflow/siliconflow
+        prompt_template:
+        - id: 818f8930-8104-4af6-bc84-5399698773ac
+          role: system
+          text: '你是一个旅游客户投诉总结助手。
+
+
+            请根据输入信息，对客户问题进行整理总结。
+
+
+            要求：
+
+            1. 保留一级分类和二级分类
+
+            2. 用户反馈需要在原始问题基础上进行适度扩展，使表达更完整
+
+            3. 扩展内容必须保持用户原意，不要编造新的事实
+
+            4. 表达简洁、清晰、适合客服工单记录
+
+
+            输入信息：
+
+            一级分类：{{#1773712797317.class_name#}}
+
+            二级分类：{{#1773746648618.class_name#}}
+
+            用户问题：{{#1773708471338.input#}}
+
+
+            输出格式：
+
+
+            问题总结：
+
+            一级分类：...
+
+            二级分类：...
+
+            用户反馈：...'
+        reasoning_format: separated
+        selected: false
+        title: 行程问题汇总
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1773746967188'
+      parentId: '1773712547548'
+      position:
+        x: 866
+        y: 769
+      positionAbsolute:
+        x: 1549
+        y: 769
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1773712547548'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: Pro/MiniMaxAI/MiniMax-M2.5
+          provider: langgenius/siliconflow/siliconflow
+        prompt_template:
+        - id: b5b3525d-94a2-4a2d-b92f-9b13b2722ddc
+          role: system
+          text: '你是一个旅游客户投诉总结助手。
+
+
+            请根据输入信息，对客户问题进行整理总结。
+
+
+            要求：
+
+            1. 保留一级分类和二级分类
+
+            2. 用户反馈需要在原始问题基础上进行适度扩展，使表达更完整
+
+            3. 扩展内容必须保持用户原意，不要编造新的事实
+
+            4. 表达简洁、清晰、适合客服工单记录
+
+
+            输入信息：
+
+            一级分类：{{#1773712797317.class_name#}}
+
+            二级分类：{{#1773746707290.class_name#}}
+
+            用户问题：{{#1773708471338.input#}}
+
+
+            输出格式：
+
+
+            问题总结：
+
+            一级分类：...
+
+            二级分类：...
+
+            用户反馈：...'
+        selected: false
+        title: 收费问题汇总
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1773747162933'
+      parentId: '1773712547548'
+      position:
+        x: 866
+        y: 1107
+      positionAbsolute:
+        x: 1549
+        y: 1107
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        is_team_authorization: true
+        iteration_id: '1773712547548'
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: Feishu Group bot webhook key
+            ja_JP: Feishu Group bot webhook key
+            pt_BR: Feishu Group bot webhook key
+            zh_Hans: 群机器人webhook的key
+          label:
+            en_US: Feishu Group bot webhook key
+            ja_JP: Feishu Group bot webhook key
+            pt_BR: Feishu Group bot webhook key
+            zh_Hans: 群机器人webhook的key
+          llm_description: ''
+          max: null
+          min: null
+          name: hook_key
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Content to sent to the group.
+            ja_JP: Content to sent to the group.
+            pt_BR: Content to sent to the group.
+            zh_Hans: 群消息文本
+          label:
+            en_US: content
+            ja_JP: content
+            pt_BR: content
+            zh_Hans: 消息内容
+          llm_description: Content of the message
+          max: null
+          min: null
+          name: content
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          content: ''
+          hook_key: ''
+        plugin_id: langgenius/feishu
+        plugin_unique_identifier: langgenius/feishu:0.0.1@9b23029c7b3440b8f4d6092e631355dd06ffdfa5595931363821dd0b88666a43
+        provider_icon: https://cloud.dify.ai/console/api/workspaces/current/plugin/icon?tenant_id=5555a037-b3ea-44a6-bdc3-f8a9aa8154a9&filename=9aebd67dfcbc3c56f83d8b697538738964705ed2c796e0cb9dc10e0dd2891a43.svg
+        provider_id: langgenius/feishu/feishu
+        provider_name: langgenius/feishu/feishu
+        provider_type: builtin
+        selected: false
+        title: 计调团队
+        tool_configurations:
+          hook_key:
+            type: mixed
+            value: 5689a373-fb84-4a71-8a02-06ec1015376b
+        tool_description: 通过飞书的群机器人webhook发送群消息
+        tool_label: 发送群消息
+        tool_name: feishu_group_bot
+        tool_node_version: '2'
+        tool_parameters:
+          content:
+            type: mixed
+            value: '计调团队注意：
+
+              客户：{{#1773708471338.name#}}
+
+              在行程专列：{{#1773708471338.product#}}
+
+              投诉：{{#1773746755956.text#}}'
+        type: tool
+      height: 87
+      id: '1773747302218'
+      parentId: '1773712547548'
+      position:
+        x: 1187
+        y: 157
+      positionAbsolute:
+        x: 1870
+        y: 157
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        is_team_authorization: true
+        iteration_id: '1773712547548'
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: Feishu Group bot webhook key
+            ja_JP: Feishu Group bot webhook key
+            pt_BR: Feishu Group bot webhook key
+            zh_Hans: 群机器人webhook的key
+          label:
+            en_US: Feishu Group bot webhook key
+            ja_JP: Feishu Group bot webhook key
+            pt_BR: Feishu Group bot webhook key
+            zh_Hans: 群机器人webhook的key
+          llm_description: ''
+          max: null
+          min: null
+          name: hook_key
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Content to sent to the group.
+            ja_JP: Content to sent to the group.
+            pt_BR: Content to sent to the group.
+            zh_Hans: 群消息文本
+          label:
+            en_US: content
+            ja_JP: content
+            pt_BR: content
+            zh_Hans: 消息内容
+          llm_description: Content of the message
+          max: null
+          min: null
+          name: content
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          content: ''
+          hook_key: ''
+        plugin_id: langgenius/feishu
+        plugin_unique_identifier: langgenius/feishu:0.0.1@9b23029c7b3440b8f4d6092e631355dd06ffdfa5595931363821dd0b88666a43
+        provider_icon: https://cloud.dify.ai/console/api/workspaces/current/plugin/icon?tenant_id=5555a037-b3ea-44a6-bdc3-f8a9aa8154a9&filename=9aebd67dfcbc3c56f83d8b697538738964705ed2c796e0cb9dc10e0dd2891a43.svg
+        provider_id: langgenius/feishu/feishu
+        provider_name: langgenius/feishu/feishu
+        provider_type: builtin
+        selected: false
+        title: 售后团队
+        tool_configurations:
+          hook_key:
+            type: mixed
+            value: 5689a373-fb84-4a71-8a02-06ec1015376b
+        tool_description: 通过飞书的群机器人webhook发送群消息
+        tool_label: 发送群消息
+        tool_name: feishu_group_bot
+        tool_node_version: '2'
+        tool_parameters:
+          content:
+            type: mixed
+            value: '售后团队注意：
+
+              客户：{{#1773708471338.name#}}
+
+              在行程专列：{{#1773708471338.product#}}
+
+              {{#1773746840628.text#}}'
+        type: tool
+      height: 87
+      id: '1773747399411'
+      parentId: '1773712547548'
+      position:
+        x: 1187
+        y: 465
+      positionAbsolute:
+        x: 1870
+        y: 465
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        is_team_authorization: true
+        iteration_id: '1773712547548'
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: Feishu Group bot webhook key
+            ja_JP: Feishu Group bot webhook key
+            pt_BR: Feishu Group bot webhook key
+            zh_Hans: 群机器人webhook的key
+          label:
+            en_US: Feishu Group bot webhook key
+            ja_JP: Feishu Group bot webhook key
+            pt_BR: Feishu Group bot webhook key
+            zh_Hans: 群机器人webhook的key
+          llm_description: ''
+          max: null
+          min: null
+          name: hook_key
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Content to sent to the group.
+            ja_JP: Content to sent to the group.
+            pt_BR: Content to sent to the group.
+            zh_Hans: 群消息文本
+          label:
+            en_US: content
+            ja_JP: content
+            pt_BR: content
+            zh_Hans: 消息内容
+          llm_description: Content of the message
+          max: null
+          min: null
+          name: content
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          content: ''
+          hook_key: ''
+        plugin_id: langgenius/feishu
+        plugin_unique_identifier: langgenius/feishu:0.0.1@9b23029c7b3440b8f4d6092e631355dd06ffdfa5595931363821dd0b88666a43
+        provider_icon: https://cloud.dify.ai/console/api/workspaces/current/plugin/icon?tenant_id=5555a037-b3ea-44a6-bdc3-f8a9aa8154a9&filename=9aebd67dfcbc3c56f83d8b697538738964705ed2c796e0cb9dc10e0dd2891a43.svg
+        provider_id: langgenius/feishu/feishu
+        provider_name: langgenius/feishu/feishu
+        provider_type: builtin
+        selected: false
+        title: 售后团队
+        tool_configurations:
+          hook_key:
+            type: mixed
+            value: 5689a373-fb84-4a71-8a02-06ec1015376b
+        tool_description: 通过飞书的群机器人webhook发送群消息
+        tool_label: 发送群消息
+        tool_name: feishu_group_bot
+        tool_node_version: '2'
+        tool_parameters:
+          content:
+            type: mixed
+            value: '售后团队注意：
+
+              客户：{{#1773708471338.name#}}
+
+              在行程专列：{{#1773708471338.product#}}
+
+              {{#1773746967188.text#}}'
+        type: tool
+      height: 87
+      id: '1773747505243'
+      parentId: '1773712547548'
+      position:
+        x: 1187
+        y: 769
+      positionAbsolute:
+        x: 1870
+        y: 769
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        isInIteration: true
+        isInLoop: false
+        is_team_authorization: true
+        iteration_id: '1773712547548'
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: Feishu Group bot webhook key
+            ja_JP: Feishu Group bot webhook key
+            pt_BR: Feishu Group bot webhook key
+            zh_Hans: 群机器人webhook的key
+          label:
+            en_US: Feishu Group bot webhook key
+            ja_JP: Feishu Group bot webhook key
+            pt_BR: Feishu Group bot webhook key
+            zh_Hans: 群机器人webhook的key
+          llm_description: ''
+          max: null
+          min: null
+          name: hook_key
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Content to sent to the group.
+            ja_JP: Content to sent to the group.
+            pt_BR: Content to sent to the group.
+            zh_Hans: 群消息文本
+          label:
+            en_US: content
+            ja_JP: content
+            pt_BR: content
+            zh_Hans: 消息内容
+          llm_description: Content of the message
+          max: null
+          min: null
+          name: content
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          content: ''
+          hook_key: ''
+        plugin_id: langgenius/feishu
+        plugin_unique_identifier: langgenius/feishu:0.0.1@9b23029c7b3440b8f4d6092e631355dd06ffdfa5595931363821dd0b88666a43
+        provider_icon: https://cloud.dify.ai/console/api/workspaces/current/plugin/icon?tenant_id=5555a037-b3ea-44a6-bdc3-f8a9aa8154a9&filename=9aebd67dfcbc3c56f83d8b697538738964705ed2c796e0cb9dc10e0dd2891a43.svg
+        provider_id: langgenius/feishu/feishu
+        provider_name: langgenius/feishu/feishu
+        provider_type: builtin
+        selected: false
+        title: 售前
+        tool_configurations:
+          hook_key:
+            type: mixed
+            value: 5689a373-fb84-4a71-8a02-06ec1015376b
+        tool_description: 通过飞书的群机器人webhook发送群消息
+        tool_label: 发送群消息
+        tool_name: feishu_group_bot
+        tool_node_version: '2'
+        tool_parameters:
+          content:
+            type: mixed
+            value: '售前团队注意：
+
+              客户：{{#1773708471338.name#}}
+
+              在行程专列：{{#1773708471338.product#}}
+
+              {{#1773747162933.text#}}'
+        type: tool
+      height: 87
+      id: '1773747617330'
+      parentId: '1773712547548'
+      position:
+        x: 1187
+        y: 1107
+      positionAbsolute:
+        x: 1870
+        y: 1107
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1002
+    - data:
+        author: Dify
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"例1：导游说没有购物点，结果天天带我们去购物，而且酒店环境也很差，房间有味道。","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1773748127923'
+      position:
+        x: -193.61266553323026
+        y: 956.4995574326942
+      positionAbsolute:
+        x: -193.61266553323026
+        y: 956.4995574326942
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
+    viewport:
+      x: 0
+      y: 0
+      zoom: 0.7
+  rag_pipeline_variables: []

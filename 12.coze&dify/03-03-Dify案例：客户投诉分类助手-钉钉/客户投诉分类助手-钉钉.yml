@@ -1,0 +1,1095 @@
+app:
+  description: 构建一个使用了钉钉群机器人的消息反馈工作流。将用户的文字问题进行分类和拆解，分析后通过钉钉群机器人发送到群中。
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: 客户投诉分类助手-钉钉
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/openai_api_compatible:0.0.24@2266d6adfeafd3a161ba4a033553f4ff8a8b1d07be54f4b11ce9e68032889ac3
+    version: null
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/dingtalk:0.0.4@1a167a005bd3509142f45f7a771f887c75437ea367840dee9760782a1a1ef082
+    version: null
+kind: app
+version: 0.5.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: question-classifier
+      id: 1763188813397-source-1763188881440-target
+      source: '1763188813397'
+      sourceHandle: source
+      target: '1763188881440'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: question-classifier
+        targetType: question-classifier
+      id: 1763188881440-1-1763189022754-target
+      source: '1763188881440'
+      sourceHandle: '1'
+      target: '1763189022754'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: question-classifier
+        targetType: question-classifier
+      id: 1763188881440-2-1763189051381-target
+      source: '1763188881440'
+      sourceHandle: '2'
+      target: '1763189051381'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: question-classifier
+        targetType: question-classifier
+      id: 1763188881440-1763189005955-1763189064658-target
+      source: '1763188881440'
+      sourceHandle: '1763189005955'
+      target: '1763189064658'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: question-classifier
+        targetType: llm
+      id: 1763189022754-1-1763190490726-target
+      source: '1763189022754'
+      sourceHandle: '1'
+      target: '1763190490726'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: question-classifier
+        targetType: llm
+      id: 1763189022754-2-1763190490726-target
+      source: '1763189022754'
+      sourceHandle: '2'
+      target: '1763190490726'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: question-classifier
+        targetType: llm
+      id: 1763189051381-1-1763190559042-target
+      source: '1763189051381'
+      sourceHandle: '1'
+      target: '1763190559042'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: question-classifier
+        targetType: llm
+      id: 1763189051381-2-1763190559042-target
+      source: '1763189051381'
+      sourceHandle: '2'
+      target: '1763190559042'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: question-classifier
+        targetType: llm
+      id: 1763189064658-1-1763190578694-target
+      source: '1763189064658'
+      sourceHandle: '1'
+      target: '1763190578694'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: question-classifier
+        targetType: llm
+      id: 1763189064658-2-1763190578694-target
+      source: '1763189064658'
+      sourceHandle: '2'
+      target: '1763190578694'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: question-classifier
+        targetType: llm
+      id: 1763189064658-1763190336448-1763190578694-target
+      source: '1763189064658'
+      sourceHandle: '1763190336448'
+      target: '1763190578694'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: tool
+      id: 1763190490726-source-1763198136033-target
+      source: '1763190490726'
+      sourceHandle: source
+      target: '1763198136033'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: tool
+      id: 1763190559042-source-1763198146932-target
+      source: '1763190559042'
+      sourceHandle: source
+      target: '1763198146932'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: tool
+      id: 1763190578694-source-1763198152314-target
+      source: '1763190578694'
+      sourceHandle: source
+      target: '1763198152314'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: end
+      id: 1763198136033-source-1763198732204-target
+      source: '1763198136033'
+      sourceHandle: source
+      target: '1763198732204'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: end
+      id: 1763198146932-source-1763198734696-target
+      source: '1763198146932'
+      sourceHandle: source
+      target: '1763198734696'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: end
+      id: 1763198152314-source-1763198736868-target
+      source: '1763198152314'
+      sourceHandle: source
+      target: '1763198736868'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        selected: false
+        title: 开始
+        type: start
+        variables:
+        - default: ''
+          hint: ''
+          label: feedback
+          max_length: 48
+          options: []
+          placeholder: ''
+          required: true
+          type: text-input
+          variable: feedback
+      height: 108
+      id: '1763188813397'
+      position:
+        x: 80
+        y: 282
+      positionAbsolute:
+        x: 80
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        classes:
+        - id: '1'
+          name: 用户投诉
+        - id: '2'
+          name: 设备故障
+        - id: '1763189005955'
+          name: 需要配件补给
+        instructions: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4o-mini
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        query_variable_selector:
+        - '1763188813397'
+        - feedback
+        selected: false
+        title: 问题分类器
+        type: question-classifier
+        vision:
+          enabled: false
+      height: 207
+      id: '1763188881440'
+      position:
+        x: 382
+        y: 282
+      positionAbsolute:
+        x: 382
+        y: 282
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        classes:
+        - id: '1'
+          name: 服务问题
+        - id: '2'
+          name: 质量问题
+        instructions: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4o-mini
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        query_variable_selector:
+        - '1763188813397'
+        - feedback
+        selected: false
+        title: 问题分类器1
+        type: question-classifier
+        vision:
+          enabled: false
+      height: 169
+      id: '1763189022754'
+      position:
+        x: 684
+        y: 282
+      positionAbsolute:
+        x: 684
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        classes:
+        - id: '1'
+          name: 软件故障
+        - id: '2'
+          name: 硬件故障
+        instructions: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4o-mini
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        query_variable_selector:
+        - '1763188813397'
+        - feedback
+        selected: false
+        title: 问题分类器2
+        type: question-classifier
+        vision:
+          enabled: false
+      height: 169
+      id: '1763189051381'
+      position:
+        x: 684
+        y: 458
+      positionAbsolute:
+        x: 684
+        y: 458
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        classes:
+        - id: '1'
+          name: 螺丝
+        - id: '2'
+          name: 钢板
+        - id: '1763190336448'
+          name: 木板
+        instructions: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4o-mini
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        query_variable_selector:
+        - '1763188813397'
+        - feedback
+        selected: false
+        title: 问题分类器3
+        type: question-classifier
+        vision:
+          enabled: false
+      height: 207
+      id: '1763189064658'
+      position:
+        x: 684
+        y: 634
+      positionAbsolute:
+        x: 684
+        y: 634
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4o-mini
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: 310500e1-ca1a-4784-85b9-70a03e08c2d0
+          role: system
+          text: '你是一个总结助手，将下面的问题进行总结
+
+            一级分类：{{#1763188881440.class_name#}}，二级分类：{{#1763189022754.class_name#}}，用户问题：{{#1763188813397.feedback#}}'
+        selected: false
+        title: 总结助手1
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1763190490726'
+      position:
+        x: 986
+        y: 282
+      positionAbsolute:
+        x: 986
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4o-mini
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: c7282381-b465-4f91-9240-d5f62a06b578
+          role: system
+          text: '你是一个总结助手，将下面的问题进行总结
+
+            一级分类：{{#1763188881440.class_name#}}，二级分类：{{#1763189051381.class_name#}}，用户问题：{{#1763188813397.feedback#}}'
+        selected: false
+        title: 总结助手2
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1763190559042'
+      position:
+        x: 986
+        y: 458
+      positionAbsolute:
+        x: 986
+        y: 458
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4o-mini
+          provider: langgenius/openai_api_compatible/openai_api_compatible
+        prompt_template:
+        - id: a554cad0-e4c6-40be-a979-ffbb73054362
+          role: system
+          text: '你是一个总结助手，将下面的问题进行总结
+
+            一级分类：{{#1763188881440.class_name#}}，二级分类：{{#1763189064658.class_name#}}，用户问题：{{#1763188813397.feedback#}}'
+        selected: false
+        title: 总结助手3
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1763190578694'
+      position:
+        x: 986
+        y: 634
+      positionAbsolute:
+        x: 986
+        y: 634
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_team_authorization: true
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: access_token in the group robot webhook
+            ja_JP: access_token in the group robot webhook
+            pt_BR: access_token in the group robot webhook
+            zh_Hans: 群自定义机器人webhook中access_token字段的值
+          label:
+            en_US: access token
+            ja_JP: access token
+            pt_BR: access token
+            zh_Hans: access token
+          llm_description: ''
+          max: null
+          min: null
+          name: access_token
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: secret key for signing
+            ja_JP: secret key for signing
+            pt_BR: secret key for signing
+            zh_Hans: 加签秘钥
+          label:
+            en_US: secret key for signing
+            ja_JP: secret key for signing
+            pt_BR: secret key for signing
+            zh_Hans: 加签秘钥
+          llm_description: ''
+          max: null
+          min: null
+          name: sign_secret
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Content to sent to the group.
+            ja_JP: Content to sent to the group.
+            pt_BR: Content to sent to the group.
+            zh_Hans: 群消息文本
+          label:
+            en_US: content
+            ja_JP: content
+            pt_BR: content
+            zh_Hans: 消息内容
+          llm_description: Content of the message
+          max: null
+          min: null
+          name: content
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: text
+          form: form
+          human_description:
+            en_US: dingtalk Group bot message type
+            ja_JP: dingtalk Group bot message type
+            pt_BR: dingtalk Group bot message type
+            zh_Hans: 群机器人webhook的消息类型
+          label:
+            en_US: dingtalk Group bot message type
+            ja_JP: dingtalk Group bot message type
+            pt_BR: dingtalk Group bot message type
+            zh_Hans: 群机器人webhook的消息类型
+          llm_description: ''
+          max: null
+          min: null
+          name: message_type
+          options:
+          - icon: ''
+            label:
+              en_US: Text
+              ja_JP: Text
+              pt_BR: Text
+              zh_Hans: 文本
+            value: text
+          - icon: ''
+            label:
+              en_US: Markdown
+              ja_JP: Markdown
+              pt_BR: Markdown
+              zh_Hans: Markdown
+            value: markdown
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: select
+        params:
+          access_token: ''
+          content: ''
+          message_type: ''
+          sign_secret: ''
+        provider_id: langgenius/dingtalk/dingtalk
+        provider_name: langgenius/dingtalk/dingtalk
+        provider_type: builtin
+        selected: true
+        title: 发送群消息1
+        tool_configurations:
+          access_token:
+            type: mixed
+            value: 537cb35c4d70e9a017bbe47db66b7480f34e86b3ca87e085781091769027897b
+          message_type:
+            type: constant
+            value: text
+          sign_secret:
+            type: mixed
+            value: SECa02e0b4f6b3b40b590530436340998eaf82004d386596743a7ce839049882dc9
+        tool_description: 通过钉钉的群机器人webhook发送群消息
+        tool_label: 发送群消息
+        tool_name: dingtalk_group_bot
+        tool_node_version: '2'
+        tool_parameters:
+          content:
+            type: mixed
+            value: '问题描述：{{#1763190490726.text#}}
+
+              用户反馈：{{#1763188813397.feedback#}}
+
+              问题所属一级分类：{{#1763188881440.class_name#}}
+
+              问题所属二级分类：{{#1763189022754.class_name#}}'
+        type: tool
+      height: 139
+      id: '1763198136033'
+      position:
+        x: 1288
+        y: 282
+      positionAbsolute:
+        x: 1288
+        y: 282
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_team_authorization: true
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: access_token in the group robot webhook
+            ja_JP: access_token in the group robot webhook
+            pt_BR: access_token in the group robot webhook
+            zh_Hans: 群自定义机器人webhook中access_token字段的值
+          label:
+            en_US: access token
+            ja_JP: access token
+            pt_BR: access token
+            zh_Hans: access token
+          llm_description: ''
+          max: null
+          min: null
+          name: access_token
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: secret key for signing
+            ja_JP: secret key for signing
+            pt_BR: secret key for signing
+            zh_Hans: 加签秘钥
+          label:
+            en_US: secret key for signing
+            ja_JP: secret key for signing
+            pt_BR: secret key for signing
+            zh_Hans: 加签秘钥
+          llm_description: ''
+          max: null
+          min: null
+          name: sign_secret
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Content to sent to the group.
+            ja_JP: Content to sent to the group.
+            pt_BR: Content to sent to the group.
+            zh_Hans: 群消息文本
+          label:
+            en_US: content
+            ja_JP: content
+            pt_BR: content
+            zh_Hans: 消息内容
+          llm_description: Content of the message
+          max: null
+          min: null
+          name: content
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: text
+          form: form
+          human_description:
+            en_US: dingtalk Group bot message type
+            ja_JP: dingtalk Group bot message type
+            pt_BR: dingtalk Group bot message type
+            zh_Hans: 群机器人webhook的消息类型
+          label:
+            en_US: dingtalk Group bot message type
+            ja_JP: dingtalk Group bot message type
+            pt_BR: dingtalk Group bot message type
+            zh_Hans: 群机器人webhook的消息类型
+          llm_description: ''
+          max: null
+          min: null
+          name: message_type
+          options:
+          - icon: ''
+            label:
+              en_US: Text
+              ja_JP: Text
+              pt_BR: Text
+              zh_Hans: 文本
+            value: text
+          - icon: ''
+            label:
+              en_US: Markdown
+              ja_JP: Markdown
+              pt_BR: Markdown
+              zh_Hans: Markdown
+            value: markdown
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: select
+        params:
+          access_token: ''
+          content: ''
+          message_type: ''
+          sign_secret: ''
+        provider_id: langgenius/dingtalk/dingtalk
+        provider_name: langgenius/dingtalk/dingtalk
+        provider_type: builtin
+        selected: false
+        title: 发送群消息2
+        tool_configurations:
+          access_token:
+            type: mixed
+            value: 537cb35c4d70e9a017bbe47db66b7480f34e86b3ca87e085781091769027897b
+          message_type:
+            type: constant
+            value: text
+          sign_secret:
+            type: mixed
+            value: SECa02e0b4f6b3b40b590530436340998eaf82004d386596743a7ce839049882dc9
+        tool_description: 通过钉钉的群机器人webhook发送群消息
+        tool_label: 发送群消息
+        tool_name: dingtalk_group_bot
+        tool_node_version: '2'
+        tool_parameters:
+          content:
+            type: mixed
+            value: '问题描述：{{#1763190559042.text#}}
+
+              用户反馈：{{#1763188813397.feedback#}}
+
+              问题所属一级分类：{{#1763188881440.class_name#}}
+
+              问题所属二级分类：{{#1763189051381.class_name#}}'
+        type: tool
+      height: 139
+      id: '1763198146932'
+      position:
+        x: 1288
+        y: 458
+      positionAbsolute:
+        x: 1288
+        y: 458
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_team_authorization: true
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: access_token in the group robot webhook
+            ja_JP: access_token in the group robot webhook
+            pt_BR: access_token in the group robot webhook
+            zh_Hans: 群自定义机器人webhook中access_token字段的值
+          label:
+            en_US: access token
+            ja_JP: access token
+            pt_BR: access token
+            zh_Hans: access token
+          llm_description: ''
+          max: null
+          min: null
+          name: access_token
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: secret key for signing
+            ja_JP: secret key for signing
+            pt_BR: secret key for signing
+            zh_Hans: 加签秘钥
+          label:
+            en_US: secret key for signing
+            ja_JP: secret key for signing
+            pt_BR: secret key for signing
+            zh_Hans: 加签秘钥
+          llm_description: ''
+          max: null
+          min: null
+          name: sign_secret
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: secret-input
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Content to sent to the group.
+            ja_JP: Content to sent to the group.
+            pt_BR: Content to sent to the group.
+            zh_Hans: 群消息文本
+          label:
+            en_US: content
+            ja_JP: content
+            pt_BR: content
+            zh_Hans: 消息内容
+          llm_description: Content of the message
+          max: null
+          min: null
+          name: content
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: text
+          form: form
+          human_description:
+            en_US: dingtalk Group bot message type
+            ja_JP: dingtalk Group bot message type
+            pt_BR: dingtalk Group bot message type
+            zh_Hans: 群机器人webhook的消息类型
+          label:
+            en_US: dingtalk Group bot message type
+            ja_JP: dingtalk Group bot message type
+            pt_BR: dingtalk Group bot message type
+            zh_Hans: 群机器人webhook的消息类型
+          llm_description: ''
+          max: null
+          min: null
+          name: message_type
+          options:
+          - icon: ''
+            label:
+              en_US: Text
+              ja_JP: Text
+              pt_BR: Text
+              zh_Hans: 文本
+            value: text
+          - icon: ''
+            label:
+              en_US: Markdown
+              ja_JP: Markdown
+              pt_BR: Markdown
+              zh_Hans: Markdown
+            value: markdown
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: select
+        params:
+          access_token: ''
+          content: ''
+          message_type: ''
+          sign_secret: ''
+        provider_id: langgenius/dingtalk/dingtalk
+        provider_name: langgenius/dingtalk/dingtalk
+        provider_type: builtin
+        selected: false
+        title: 发送群消息3
+        tool_configurations:
+          access_token:
+            type: mixed
+            value: 537cb35c4d70e9a017bbe47db66b7480f34e86b3ca87e085781091769027897b
+          message_type:
+            type: constant
+            value: text
+          sign_secret:
+            type: mixed
+            value: SECa02e0b4f6b3b40b590530436340998eaf82004d386596743a7ce839049882dc9
+        tool_description: 通过钉钉的群机器人webhook发送群消息
+        tool_label: 发送群消息
+        tool_name: dingtalk_group_bot
+        tool_node_version: '2'
+        tool_parameters:
+          content:
+            type: mixed
+            value: '问题描述：{{#1763190578694.text#}}
+
+              用户反馈：{{#1763188813397.feedback#}}
+
+              问题所属一级分类：{{#1763188881440.class_name#}}
+
+              问题所属二级分类：{{#1763189064658.class_name#}}'
+        type: tool
+      height: 139
+      id: '1763198152314'
+      position:
+        x: 1288
+        y: 634
+      positionAbsolute:
+        x: 1288
+        y: 634
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        outputs:
+        - value_selector:
+          - '1763198136033'
+          - text
+          value_type: string
+          variable: text
+        selected: false
+        title: 结束
+        type: end
+      height: 88
+      id: '1763198732204'
+      position:
+        x: 1590
+        y: 282
+      positionAbsolute:
+        x: 1590
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        outputs:
+        - value_selector:
+          - '1763198146932'
+          - text
+          value_type: string
+          variable: text
+        selected: false
+        title: 结束 2
+        type: end
+      height: 88
+      id: '1763198734696'
+      position:
+        x: 1590
+        y: 458
+      positionAbsolute:
+        x: 1590
+        y: 458
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        outputs:
+        - value_selector:
+          - '1763198152314'
+          - text
+          value_type: string
+          variable: text
+        selected: false
+        title: 结束 3
+        type: end
+      height: 88
+      id: '1763198736868'
+      position:
+        x: 1590
+        y: 634
+      positionAbsolute:
+        x: 1590
+        y: 634
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    viewport:
+      x: -967
+      y: -80.5
+      zoom: 1
+  rag_pipeline_variables: []
