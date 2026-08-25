@@ -67,7 +67,7 @@ class KnowledgeService(object):
 
         chromaConfig = {
             'source': filename,
-            'creattime': datetime.now().strftime('%Y-$M-%D %H:%M:%S'),
+            'creattime': datetime.now().strftime('%Y-%M-%D %H:%M:%S'),
             'operator': 'TaoYU'
         }
         self.chroma.add_texts(
